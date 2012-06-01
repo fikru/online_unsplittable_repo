@@ -1,0 +1,103 @@
+\hypertarget{parser_8cpp}{\section{/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/parser.cpp \-File \-Reference}
+\label{parser_8cpp}\index{/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/parser.\-cpp@{/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/parser.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}parser.\-h\char`\"{}}\*
+{\ttfamily \#include $<$vector$>$}\*
+{\ttfamily \#include $<$getopt.\-h$>$}\*
+{\ttfamily \#include $<$sstream$>$}\*
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{parser_8cpp_a14328a11ac1e9bc5a669e2d0341e2f54}{nr\-\_\-flows}
+\begin{DoxyCompactList}\small\item\em nr of traffic flows \end{DoxyCompactList}\item 
+int \hyperlink{parser_8cpp_ac430c7b9fb12fc01885b9465364e3d97}{nr\-\_\-routers}
+\begin{DoxyCompactList}\small\item\em nr of routers in the architecture \end{DoxyCompactList}\item 
+int \hyperlink{parser_8cpp_a3288b1e9f09032f99fdd54cfd4a26aa9}{nr\-\_\-links}
+\begin{DoxyCompactList}\small\item\em nr of links in a router \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{parser_8cpp_a49482e053b5a87760f4c3fe1242cd72b}{traffic}
+\begin{DoxyCompactList}\small\item\em traffic needed to be routed \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{parser_8cpp_a1299d2dbbe6f58ee6229ef30aa5f5bde}{r\-\_\-capacity}
+\begin{DoxyCompactList}\small\item\em vector of capacity for each router \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{parser_8cpp_a5b014c61c7abb7b5d95080985d3d2448}{r\-\_\-power}
+\begin{DoxyCompactList}\small\item\em vector of power consumption for each router \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{parser_8cpp_a04f7d3c356c598431b28151df15c7a1e}{l\-\_\-capacity}
+\begin{DoxyCompactList}\small\item\em vector of capacity for each link on a router \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{parser_8cpp_a219826526adf24ccd45b45e6ceab2359}{l\-\_\-power}
+\begin{DoxyCompactList}\small\item\em vector of power consumption of each link on a router \end{DoxyCompactList}\item 
+vector$<$ vector$<$ double $>$ $>$ \hyperlink{parser_8cpp_a33ae934d11ad20d1de64a6d9aba13623}{all\-\_\-l\-\_\-capacity}
+\begin{DoxyCompactList}\small\item\em vector of links on all routers \end{DoxyCompactList}\item 
+vector$<$ vector$<$ double $>$ $>$ \hyperlink{parser_8cpp_a62fe6a3c0e8a9ee6c84275f3a2bb0e79}{all\-\_\-l\-\_\-power}
+\begin{DoxyCompactList}\small\item\em vector of power consumption of links on all routers \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{parser_8cpp_a33ae934d11ad20d1de64a6d9aba13623}{\index{parser.\-cpp@{parser.\-cpp}!all\-\_\-l\-\_\-capacity@{all\-\_\-l\-\_\-capacity}}
+\index{all\-\_\-l\-\_\-capacity@{all\-\_\-l\-\_\-capacity}!parser.cpp@{parser.\-cpp}}
+\subsubsection[{all\-\_\-l\-\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector $<$double$>$ $>$ {\bf all\-\_\-l\-\_\-capacity}}}\label{parser_8cpp_a33ae934d11ad20d1de64a6d9aba13623}
+
+
+vector of links on all routers 
+
+\hypertarget{parser_8cpp_a62fe6a3c0e8a9ee6c84275f3a2bb0e79}{\index{parser.\-cpp@{parser.\-cpp}!all\-\_\-l\-\_\-power@{all\-\_\-l\-\_\-power}}
+\index{all\-\_\-l\-\_\-power@{all\-\_\-l\-\_\-power}!parser.cpp@{parser.\-cpp}}
+\subsubsection[{all\-\_\-l\-\_\-power}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector $<$double$>$ $>$ {\bf all\-\_\-l\-\_\-power}}}\label{parser_8cpp_a62fe6a3c0e8a9ee6c84275f3a2bb0e79}
+
+
+vector of power consumption of links on all routers 
+
+\hypertarget{parser_8cpp_a04f7d3c356c598431b28151df15c7a1e}{\index{parser.\-cpp@{parser.\-cpp}!l\-\_\-capacity@{l\-\_\-capacity}}
+\index{l\-\_\-capacity@{l\-\_\-capacity}!parser.cpp@{parser.\-cpp}}
+\subsubsection[{l\-\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ {\bf l\-\_\-capacity}}}\label{parser_8cpp_a04f7d3c356c598431b28151df15c7a1e}
+
+
+vector of capacity for each link on a router 
+
+\hypertarget{parser_8cpp_a219826526adf24ccd45b45e6ceab2359}{\index{parser.\-cpp@{parser.\-cpp}!l\-\_\-power@{l\-\_\-power}}
+\index{l\-\_\-power@{l\-\_\-power}!parser.cpp@{parser.\-cpp}}
+\subsubsection[{l\-\_\-power}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ {\bf l\-\_\-power}}}\label{parser_8cpp_a219826526adf24ccd45b45e6ceab2359}
+
+
+vector of power consumption of each link on a router 
+
+\hypertarget{parser_8cpp_a14328a11ac1e9bc5a669e2d0341e2f54}{\index{parser.\-cpp@{parser.\-cpp}!nr\-\_\-flows@{nr\-\_\-flows}}
+\index{nr\-\_\-flows@{nr\-\_\-flows}!parser.cpp@{parser.\-cpp}}
+\subsubsection[{nr\-\_\-flows}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf nr\-\_\-flows}}}\label{parser_8cpp_a14328a11ac1e9bc5a669e2d0341e2f54}
+
+
+nr of traffic flows 
+
+\hypertarget{parser_8cpp_a3288b1e9f09032f99fdd54cfd4a26aa9}{\index{parser.\-cpp@{parser.\-cpp}!nr\-\_\-links@{nr\-\_\-links}}
+\index{nr\-\_\-links@{nr\-\_\-links}!parser.cpp@{parser.\-cpp}}
+\subsubsection[{nr\-\_\-links}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf nr\-\_\-links}}}\label{parser_8cpp_a3288b1e9f09032f99fdd54cfd4a26aa9}
+
+
+nr of links in a router 
+
+\hypertarget{parser_8cpp_ac430c7b9fb12fc01885b9465364e3d97}{\index{parser.\-cpp@{parser.\-cpp}!nr\-\_\-routers@{nr\-\_\-routers}}
+\index{nr\-\_\-routers@{nr\-\_\-routers}!parser.cpp@{parser.\-cpp}}
+\subsubsection[{nr\-\_\-routers}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf nr\-\_\-routers}}}\label{parser_8cpp_ac430c7b9fb12fc01885b9465364e3d97}
+
+
+nr of routers in the architecture 
+
+\hypertarget{parser_8cpp_a1299d2dbbe6f58ee6229ef30aa5f5bde}{\index{parser.\-cpp@{parser.\-cpp}!r\-\_\-capacity@{r\-\_\-capacity}}
+\index{r\-\_\-capacity@{r\-\_\-capacity}!parser.cpp@{parser.\-cpp}}
+\subsubsection[{r\-\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ {\bf r\-\_\-capacity}}}\label{parser_8cpp_a1299d2dbbe6f58ee6229ef30aa5f5bde}
+
+
+vector of capacity for each router 
+
+\hypertarget{parser_8cpp_a5b014c61c7abb7b5d95080985d3d2448}{\index{parser.\-cpp@{parser.\-cpp}!r\-\_\-power@{r\-\_\-power}}
+\index{r\-\_\-power@{r\-\_\-power}!parser.cpp@{parser.\-cpp}}
+\subsubsection[{r\-\_\-power}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ {\bf r\-\_\-power}}}\label{parser_8cpp_a5b014c61c7abb7b5d95080985d3d2448}
+
+
+vector of power consumption for each router 
+
+\hypertarget{parser_8cpp_a49482e053b5a87760f4c3fe1242cd72b}{\index{parser.\-cpp@{parser.\-cpp}!traffic@{traffic}}
+\index{traffic@{traffic}!parser.cpp@{parser.\-cpp}}
+\subsubsection[{traffic}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ {\bf traffic}}}\label{parser_8cpp_a49482e053b5a87760f4c3fe1242cd72b}
+
+
+traffic needed to be routed 
+

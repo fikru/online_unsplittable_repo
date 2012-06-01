@@ -1,0 +1,97 @@
+\hypertarget{classdeviceSetup}{\section{device\-Setup \-Class \-Reference}
+\label{classdeviceSetup}\index{device\-Setup@{device\-Setup}}
+}
+
+
+sets up the multistage architecture configuration  
+
+
+
+
+{\ttfamily \#include $<$device\-Setup.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdeviceSetup_aee6d5a2f08053ef7071853eaefd4ca42}{device\-Setup} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\hyperlink{classdeviceSetup_a80a771874b29d08f05f92c1b2c52c348}{$\sim$device\-Setup} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \hyperlink{classdeviceSetup_a56a51cc81222dec1a08e1d07eafca000}{actual\-Capacity} (\hyperlink{classmultistage}{multistage} $\ast$, list$<$ \hyperlink{classrouter}{router} $>$ \&)
+\begin{DoxyCompactList}\small\item\em computes the actual capacity of backend routers \end{DoxyCompactList}\item 
+void \hyperlink{classdeviceSetup_a89cb8151a7b9153ea09fcfc52260bb9b}{empty\-\_\-routers} (list$<$ \hyperlink{classrouter}{router} $>$ \&)
+\begin{DoxyCompactList}\small\item\em resets some parameters of the router; such as its initial residual capacity \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+sets up the multistage architecture configuration 
+
+initially it is needed to initialize the multistage architecture as well as its internal components 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classdeviceSetup_aee6d5a2f08053ef7071853eaefd4ca42}{\index{device\-Setup@{device\-Setup}!device\-Setup@{device\-Setup}}
+\index{device\-Setup@{device\-Setup}!deviceSetup@{device\-Setup}}
+\subsubsection[{device\-Setup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf device\-Setup\-::device\-Setup} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdeviceSetup_aee6d5a2f08053ef7071853eaefd4ca42}
+
+
+constructor 
+
+\hypertarget{classdeviceSetup_a80a771874b29d08f05f92c1b2c52c348}{\index{device\-Setup@{device\-Setup}!$\sim$device\-Setup@{$\sim$device\-Setup}}
+\index{$\sim$device\-Setup@{$\sim$device\-Setup}!deviceSetup@{device\-Setup}}
+\subsubsection[{$\sim$device\-Setup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf device\-Setup\-::$\sim$device\-Setup} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdeviceSetup_a80a771874b29d08f05f92c1b2c52c348}
+
+
+destructor 
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classdeviceSetup_a56a51cc81222dec1a08e1d07eafca000}{\index{device\-Setup@{device\-Setup}!actual\-Capacity@{actual\-Capacity}}
+\index{actual\-Capacity@{actual\-Capacity}!deviceSetup@{device\-Setup}}
+\subsubsection[{actual\-Capacity}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf device\-Setup\-::actual\-Capacity} (
+\begin{DoxyParamCaption}
+\item[{{\bf multistage} $\ast$}]{mssr, }
+\item[{list$<$ {\bf router} $>$ \&}]{r\-List}
+\end{DoxyParamCaption}
+)}}\label{classdeviceSetup_a56a51cc81222dec1a08e1d07eafca000}
+
+
+computes the actual capacity of backend routers 
+
+the actual capacity of a router is limited either by the total capacity of its links or by its routing capacity 
+\begin{DoxyParams}{\-Parameters}
+{\em mssr} & the multistage architecture \\
+\hline
+{\em r\-List} & the list of routers in the multistage architecture \\
+\hline
+\end{DoxyParams}
+\hypertarget{classdeviceSetup_a89cb8151a7b9153ea09fcfc52260bb9b}{\index{device\-Setup@{device\-Setup}!empty\-\_\-routers@{empty\-\_\-routers}}
+\index{empty\-\_\-routers@{empty\-\_\-routers}!deviceSetup@{device\-Setup}}
+\subsubsection[{empty\-\_\-routers}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf device\-Setup\-::empty\-\_\-routers} (
+\begin{DoxyParamCaption}
+\item[{list$<$ {\bf router} $>$ \&}]{r\-List}
+\end{DoxyParamCaption}
+)}}\label{classdeviceSetup_a89cb8151a7b9153ea09fcfc52260bb9b}
+
+
+resets some parameters of the router; such as its initial residual capacity 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em r\-List} & the list of routers in the multistage architecture \\
+\hline
+\end{DoxyParams}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/include/\hyperlink{deviceSetup_8h}{device\-Setup.\-h}\item 
+/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/\hyperlink{deviceSetup_8cpp}{device\-Setup.\-cpp}\end{DoxyCompactItemize}

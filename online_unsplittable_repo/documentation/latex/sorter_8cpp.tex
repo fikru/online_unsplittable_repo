@@ -1,0 +1,59 @@
+\hypertarget{sorter_8cpp}{\section{/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/sorter.cpp \-File \-Reference}
+\label{sorter_8cpp}\index{/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/sorter.\-cpp@{/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/sorter.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}global.\-h\char`\"{}}\*
+{\ttfamily \#include $<$algorithm$>$}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{sorter_8cpp_a7b09dd0dda6927944851848846d890ca}{rcompare} (\hyperlink{classrouter}{router} \&lr, \hyperlink{classrouter}{router} \&rr)
+\begin{DoxyCompactList}\small\item\em compares two routers efficiency = actual\-Capacity/power \end{DoxyCompactList}\item 
+bool \hyperlink{sorter_8cpp_a64a35fd92e648ef82dbfbb7c91319d3f}{lcompare} (\hyperlink{classrLink}{r\-Link} \&ll, \hyperlink{classrLink}{r\-Link} \&rl)
+\begin{DoxyCompactList}\small\item\em compares two links efficiency = link\-Capacity/power \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{sorter_8cpp_a64a35fd92e648ef82dbfbb7c91319d3f}{\index{sorter.\-cpp@{sorter.\-cpp}!lcompare@{lcompare}}
+\index{lcompare@{lcompare}!sorter.cpp@{sorter.\-cpp}}
+\subsubsection[{lcompare}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf lcompare} (
+\begin{DoxyParamCaption}
+\item[{{\bf r\-Link} \&}]{ll, }
+\item[{{\bf r\-Link} \&}]{rl}
+\end{DoxyParamCaption}
+)}}\label{sorter_8cpp_a64a35fd92e648ef82dbfbb7c91319d3f}
+
+
+compares two links efficiency = link\-Capacity/power 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em rl} & right side link to compare \\
+\hline
+{\em ll} & left side link to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+boolean value indicating which of the two links is more efficient 
+\end{DoxyReturn}
+\hypertarget{sorter_8cpp_a7b09dd0dda6927944851848846d890ca}{\index{sorter.\-cpp@{sorter.\-cpp}!rcompare@{rcompare}}
+\index{rcompare@{rcompare}!sorter.cpp@{sorter.\-cpp}}
+\subsubsection[{rcompare}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf rcompare} (
+\begin{DoxyParamCaption}
+\item[{{\bf router} \&}]{lr, }
+\item[{{\bf router} \&}]{rr}
+\end{DoxyParamCaption}
+)}}\label{sorter_8cpp_a7b09dd0dda6927944851848846d890ca}
+
+
+compares two routers efficiency = actual\-Capacity/power 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em lr} & right side router to compare \\
+\hline
+{\em rr} & left side router to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+boolean value indicating which of the two routers is more efficient 
+\end{DoxyReturn}

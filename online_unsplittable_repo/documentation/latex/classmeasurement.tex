@@ -1,0 +1,282 @@
+\hypertarget{classmeasurement}{\section{measurement \-Class \-Reference}
+\label{classmeasurement}\index{measurement@{measurement}}
+}
+
+
+used to collect input and output information, gather results  
+
+
+
+
+{\ttfamily \#include $<$measurement.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmeasurement_a94ea175b4a5eecf4c60af94b7d630ca0}{measurement} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\hyperlink{classmeasurement_adad6fad962fe7f356188e2d108069ab9}{$\sim$measurement} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \hyperlink{classmeasurement_a18541883e2ecd3b899577809bc318987}{set\-Start} ()
+\begin{DoxyCompactList}\small\item\em saves the beginning of the simulation run \end{DoxyCompactList}\item 
+void \hyperlink{classmeasurement_adfeee2a53faaa6c4de885f274e31e84f}{set\-End} ()
+\begin{DoxyCompactList}\small\item\em saves the end of the simulation run \end{DoxyCompactList}\item 
+void \hyperlink{classmeasurement_ab92b9dab0ee6ac312170b5536858fc8c}{set\-Time\-Adv\-List} ()
+\begin{DoxyCompactList}\small\item\em sets simulation time list \end{DoxyCompactList}\item 
+void \hyperlink{classmeasurement_ae5af86c6b09d4bc3bd8f648c371a3f9c}{set\-Mod\-Time} (char $\ast$)
+\begin{DoxyCompactList}\small\item\em set file modification time \end{DoxyCompactList}\item 
+vector$<$ long $>$ \hyperlink{classmeasurement_a6348d9460718925850e77c02b8adeba8}{get\-Time\-Adv\-List} ()
+\begin{DoxyCompactList}\small\item\em gets simulation time list \end{DoxyCompactList}\item 
+double \hyperlink{classmeasurement_a0c29e12029b98174f084e9485c67c10c}{get\-Start} ()
+\begin{DoxyCompactList}\small\item\em get simulation start time \end{DoxyCompactList}\item 
+double \hyperlink{classmeasurement_a48411dc4fa236d3101ae2ab4c09eebb6}{get\-End} ()
+\begin{DoxyCompactList}\small\item\em get simulation end time \end{DoxyCompactList}\item 
+long \hyperlink{classmeasurement_ac7aa8bcfc7395295031be31558494d76}{get\-Mod\-Time} ()
+\begin{DoxyCompactList}\small\item\em gets file modification time \end{DoxyCompactList}\item 
+void \hyperlink{classmeasurement_a18838caa4a3b08613e822aeb449d91ba}{result} (list$<$ \hyperlink{classrouter}{router} $>$, \hyperlink{classstatistics}{statistics})
+\begin{DoxyCompactList}\small\item\em display different packing statistics \end{DoxyCompactList}\item 
+double \hyperlink{classmeasurement_ab734bbbfdfa01be67553368501b32189}{get\-Sum} (vector$<$ double $>$ \&)
+\begin{DoxyCompactList}\small\item\em compute summation of a vector of any type \-T \end{DoxyCompactList}\item 
+bool \hyperlink{classmeasurement_abd3271afad2207cd5db4de16edbf59a3}{compare\-Vector} (vector$<$ double $>$ \&, vector$<$ double $>$ \&)
+\begin{DoxyCompactList}\small\item\em compare two vectors \end{DoxyCompactList}\item 
+int \hyperlink{classmeasurement_a4126bd87377bb02f30d9f81f3d36304c}{conf\-\_\-diff} (list$<$ \hyperlink{classrouter}{router} $>$ \&, list$<$ \hyperlink{classrouter}{router} $>$ \&)
+\begin{DoxyCompactList}\small\item\em measure the difference, in terms of nr of router, between current load and previous load \end{DoxyCompactList}\item 
+void \hyperlink{classmeasurement_a10e7afbdd82e2fed30bd9e7a8725a3bc}{config\-\_\-file} (list$<$ \hyperlink{classrouter}{router} $>$)
+\begin{DoxyCompactList}\small\item\em display the input configuration file parsed \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+used to collect input and output information, gather results 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classmeasurement_a94ea175b4a5eecf4c60af94b7d630ca0}{\index{measurement@{measurement}!measurement@{measurement}}
+\index{measurement@{measurement}!measurement@{measurement}}
+\subsubsection[{measurement}]{\setlength{\rightskip}{0pt plus 5cm}{\bf measurement\-::measurement} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmeasurement_a94ea175b4a5eecf4c60af94b7d630ca0}
+
+
+constructor 
+
+\hypertarget{classmeasurement_adad6fad962fe7f356188e2d108069ab9}{\index{measurement@{measurement}!$\sim$measurement@{$\sim$measurement}}
+\index{$\sim$measurement@{$\sim$measurement}!measurement@{measurement}}
+\subsubsection[{$\sim$measurement}]{\setlength{\rightskip}{0pt plus 5cm}{\bf measurement\-::$\sim$measurement} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmeasurement_adad6fad962fe7f356188e2d108069ab9}
+
+
+destructor 
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classmeasurement_abd3271afad2207cd5db4de16edbf59a3}{\index{measurement@{measurement}!compare\-Vector@{compare\-Vector}}
+\index{compare\-Vector@{compare\-Vector}!measurement@{measurement}}
+\subsubsection[{compare\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf measurement\-::compare\-Vector} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ double $>$ \&}]{vector1, }
+\item[{vector$<$ double $>$ \&}]{vector2}
+\end{DoxyParamCaption}
+)}}\label{classmeasurement_abd3271afad2207cd5db4de16edbf59a3}
+
+
+compare two vectors 
+
+take any two vectors of any type and compare them 
+\begin{DoxyParams}{\-Parameters}
+{\em vector1} & the first vector (the reference) \\
+\hline
+{\em vector2} & the second vector to be compared to the first vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmeasurement_a4126bd87377bb02f30d9f81f3d36304c}{\index{measurement@{measurement}!conf\-\_\-diff@{conf\-\_\-diff}}
+\index{conf\-\_\-diff@{conf\-\_\-diff}!measurement@{measurement}}
+\subsubsection[{conf\-\_\-diff}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf measurement\-::conf\-\_\-diff} (
+\begin{DoxyParamCaption}
+\item[{list$<$ {\bf router} $>$ \&}]{r\-List, }
+\item[{list$<$ {\bf router} $>$ \&}]{prev\-\_\-r\-List}
+\end{DoxyParamCaption}
+)}}\label{classmeasurement_a4126bd87377bb02f30d9f81f3d36304c}
+
+
+measure the difference, in terms of nr of router, between current load and previous load 
+
+this difference is used to compare with the optimal solution 
+\begin{DoxyParams}{\-Parameters}
+{\em r\-List} & list of back end routers (current configuration) \\
+\hline
+{\em prev\-\_\-r\-List} & list of back end routers (previous configuration) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+conf\-\_\-change\-\_\-count difference between the two configuration 
+\end{DoxyReturn}
+\hypertarget{classmeasurement_a10e7afbdd82e2fed30bd9e7a8725a3bc}{\index{measurement@{measurement}!config\-\_\-file@{config\-\_\-file}}
+\index{config\-\_\-file@{config\-\_\-file}!measurement@{measurement}}
+\subsubsection[{config\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf measurement\-::config\-\_\-file} (
+\begin{DoxyParamCaption}
+\item[{list$<$ {\bf router} $>$}]{r\-List}
+\end{DoxyParamCaption}
+)}}\label{classmeasurement_a10e7afbdd82e2fed30bd9e7a8725a3bc}
+
+
+display the input configuration file parsed 
+
+it is a check point to verify if the text configuration is parsed correctly or not 
+\begin{DoxyParams}{\-Parameters}
+{\em r\-List} & list of backend routers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+configuration file 
+\end{DoxyReturn}
+\hypertarget{classmeasurement_a48411dc4fa236d3101ae2ab4c09eebb6}{\index{measurement@{measurement}!get\-End@{get\-End}}
+\index{get\-End@{get\-End}!measurement@{measurement}}
+\subsubsection[{get\-End}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf measurement\-::get\-End} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmeasurement_a48411dc4fa236d3101ae2ab4c09eebb6}
+
+
+get simulation end time 
+
+\begin{DoxyReturn}{\-Returns}
+simulation end time -\/ since epoch time 
+\end{DoxyReturn}
+\hypertarget{classmeasurement_ac7aa8bcfc7395295031be31558494d76}{\index{measurement@{measurement}!get\-Mod\-Time@{get\-Mod\-Time}}
+\index{get\-Mod\-Time@{get\-Mod\-Time}!measurement@{measurement}}
+\subsubsection[{get\-Mod\-Time}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf measurement\-::get\-Mod\-Time} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmeasurement_ac7aa8bcfc7395295031be31558494d76}
+
+
+gets file modification time 
+
+\begin{DoxyReturn}{\-Returns}
+modification time 
+\end{DoxyReturn}
+\hypertarget{classmeasurement_a0c29e12029b98174f084e9485c67c10c}{\index{measurement@{measurement}!get\-Start@{get\-Start}}
+\index{get\-Start@{get\-Start}!measurement@{measurement}}
+\subsubsection[{get\-Start}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf measurement\-::get\-Start} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmeasurement_a0c29e12029b98174f084e9485c67c10c}
+
+
+get simulation start time 
+
+\begin{DoxyReturn}{\-Returns}
+simulation start time -\/ since epoch time 
+\end{DoxyReturn}
+\hypertarget{classmeasurement_ab734bbbfdfa01be67553368501b32189}{\index{measurement@{measurement}!get\-Sum@{get\-Sum}}
+\index{get\-Sum@{get\-Sum}!measurement@{measurement}}
+\subsubsection[{get\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf measurement\-::get\-Sum} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ double $>$ \&}]{vectorin}
+\end{DoxyParamCaption}
+)}}\label{classmeasurement_ab734bbbfdfa01be67553368501b32189}
+
+
+compute summation of a vector of any type \-T 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em vectorin} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+sum of an input vector 
+\end{DoxyReturn}
+\hypertarget{classmeasurement_a6348d9460718925850e77c02b8adeba8}{\index{measurement@{measurement}!get\-Time\-Adv\-List@{get\-Time\-Adv\-List}}
+\index{get\-Time\-Adv\-List@{get\-Time\-Adv\-List}!measurement@{measurement}}
+\subsubsection[{get\-Time\-Adv\-List}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ long $>$ {\bf measurement\-::get\-Time\-Adv\-List} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmeasurement_a6348d9460718925850e77c02b8adeba8}
+
+
+gets simulation time list 
+
+\hypertarget{classmeasurement_a18838caa4a3b08613e822aeb449d91ba}{\index{measurement@{measurement}!result@{result}}
+\index{result@{result}!measurement@{measurement}}
+\subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf measurement\-::result} (
+\begin{DoxyParamCaption}
+\item[{list$<$ {\bf router} $>$}]{r\-List, }
+\item[{{\bf statistics}}]{stat}
+\end{DoxyParamCaption}
+)}}\label{classmeasurement_a18838caa4a3b08613e822aeb449d91ba}
+
+
+display different packing statistics 
+
+the statistics dispalyed include simulation time, objective, traffic forwarded and lost, etc 
+\begin{DoxyParams}{\-Parameters}
+{\em r\-List} & list of backend routers \\
+\hline
+{\em stat} & statistics about the packing \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmeasurement_adfeee2a53faaa6c4de885f274e31e84f}{\index{measurement@{measurement}!set\-End@{set\-End}}
+\index{set\-End@{set\-End}!measurement@{measurement}}
+\subsubsection[{set\-End}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf measurement\-::set\-End} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmeasurement_adfeee2a53faaa6c4de885f274e31e84f}
+
+
+saves the end of the simulation run 
+
+\hypertarget{classmeasurement_ae5af86c6b09d4bc3bd8f648c371a3f9c}{\index{measurement@{measurement}!set\-Mod\-Time@{set\-Mod\-Time}}
+\index{set\-Mod\-Time@{set\-Mod\-Time}!measurement@{measurement}}
+\subsubsection[{set\-Mod\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf measurement\-::set\-Mod\-Time} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{f\-\_\-name}
+\end{DoxyParamCaption}
+)}}\label{classmeasurement_ae5af86c6b09d4bc3bd8f648c371a3f9c}
+
+
+set file modification time 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em f\-\_\-name} & file name \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmeasurement_a18541883e2ecd3b899577809bc318987}{\index{measurement@{measurement}!set\-Start@{set\-Start}}
+\index{set\-Start@{set\-Start}!measurement@{measurement}}
+\subsubsection[{set\-Start}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf measurement\-::set\-Start} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmeasurement_a18541883e2ecd3b899577809bc318987}
+
+
+saves the beginning of the simulation run 
+
+\hypertarget{classmeasurement_ab92b9dab0ee6ac312170b5536858fc8c}{\index{measurement@{measurement}!set\-Time\-Adv\-List@{set\-Time\-Adv\-List}}
+\index{set\-Time\-Adv\-List@{set\-Time\-Adv\-List}!measurement@{measurement}}
+\subsubsection[{set\-Time\-Adv\-List}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf measurement\-::set\-Time\-Adv\-List} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmeasurement_ab92b9dab0ee6ac312170b5536858fc8c}
+
+
+sets simulation time list 
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/include/\hyperlink{measurement_8h}{measurement.\-h}\item 
+/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/\hyperlink{measurement_8cpp}{measurement.\-cpp}\end{DoxyCompactItemize}

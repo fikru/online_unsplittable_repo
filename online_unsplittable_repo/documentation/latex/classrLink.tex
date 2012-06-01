@@ -1,0 +1,205 @@
+\hypertarget{classrLink}{\section{r\-Link \-Class \-Reference}
+\label{classrLink}\index{r\-Link@{r\-Link}}
+}
+
+
+\-Router link class reference.  
+
+
+
+
+{\ttfamily \#include $<$r\-Link.\-h$>$}
+
+\-Inheritance diagram for r\-Link\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrLink}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrLink_acd7f5f66409693e86cd33e4a6e6964b8}{r\-Link} (int, string, double, double, int)
+\begin{DoxyCompactList}\small\item\em \-Construct a link. \end{DoxyCompactList}\item 
+\hyperlink{classrLink_ac2f6e30278ba2967b96086435711f672}{$\sim$r\-Link} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+double \hyperlink{classrLink_aa840b5668425c224a451ec1663754a82}{get\-Residual} ()
+\begin{DoxyCompactList}\small\item\em \-Gets residual capacity of a link. \end{DoxyCompactList}\item 
+bool \hyperlink{classrLink_a4639d6b69acbb669d0cbb7af5cbf152b}{get\-Flag} ()
+\begin{DoxyCompactList}\small\item\em \-Gets link usage flag. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{classrLink_a86c80f0a22f7703601d8a242c2fb471f}{get\-Lstat} ()
+\begin{DoxyCompactList}\small\item\em \-Gets link flow statistics. \end{DoxyCompactList}\item 
+void \hyperlink{classrLink_a7ac5fdbd1b4fc92cbfd5d8e421477148}{set\-Residual} (double)
+\begin{DoxyCompactList}\small\item\em \-Sets residual capacity of a link. \end{DoxyCompactList}\item 
+void \hyperlink{classrLink_a15022659ea92d086138f817203ede689}{set\-Flag} (bool)
+\begin{DoxyCompactList}\small\item\em \-Sets link flag. \end{DoxyCompactList}\item 
+void \hyperlink{classrLink_a719c8cee2887f566dd4e0ca6df81f0de}{set\-Lstat} (double)
+\begin{DoxyCompactList}\small\item\em \-Sets link flow statistics. \end{DoxyCompactList}\item 
+void \hyperlink{classrLink_a60204cffa46245fb1e2c7d7a7872dbcb}{clear\-Lstat} ()
+\begin{DoxyCompactList}\small\item\em clear link flow statistics \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Router link class reference. 
+
+\-It inherits device class and creates a new link
+
+{\bfseries \-Usage \-Example\-:} 
+\begin{DoxyCode}
+ rLink *l = new rLink(1, "link_1", 0, 0, 0, 0)
+\end{DoxyCode}
+ 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classrLink_acd7f5f66409693e86cd33e4a6e6964b8}{\index{r\-Link@{r\-Link}!r\-Link@{r\-Link}}
+\index{r\-Link@{r\-Link}!rLink@{r\-Link}}
+\subsubsection[{r\-Link}]{\setlength{\rightskip}{0pt plus 5cm}{\bf r\-Link\-::r\-Link} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-I\-D, }
+\item[{string}]{name, }
+\item[{double}]{capacity, }
+\item[{double}]{power, }
+\item[{int}]{state}
+\end{DoxyParamCaption}
+)}}\label{classrLink_acd7f5f66409693e86cd33e4a6e6964b8}
+
+
+\-Construct a link. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em \-I\-D} & link identification number \\
+\hline
+{\em name} & link name \\
+\hline
+{\em capacity} & link capacity \\
+\hline
+{\em power} & link power consumption \\
+\hline
+{\em state} & link state\-: \-O\-N/\-O\-F\-F \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{classdevice_a57b9c4ac7a8bd970b81b1154ae79a5de}{device(int ,string ,double ,double ,int ,int )} 
+\end{DoxySeeAlso}
+\hypertarget{classrLink_ac2f6e30278ba2967b96086435711f672}{\index{r\-Link@{r\-Link}!$\sim$r\-Link@{$\sim$r\-Link}}
+\index{$\sim$r\-Link@{$\sim$r\-Link}!rLink@{r\-Link}}
+\subsubsection[{$\sim$r\-Link}]{\setlength{\rightskip}{0pt plus 5cm}{\bf r\-Link\-::$\sim$r\-Link} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classrLink_ac2f6e30278ba2967b96086435711f672}
+
+
+\-Destructor. 
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classrLink_a60204cffa46245fb1e2c7d7a7872dbcb}{\index{r\-Link@{r\-Link}!clear\-Lstat@{clear\-Lstat}}
+\index{clear\-Lstat@{clear\-Lstat}!rLink@{r\-Link}}
+\subsubsection[{clear\-Lstat}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf r\-Link\-::clear\-Lstat} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrLink_a60204cffa46245fb1e2c7d7a7872dbcb}
+
+
+clear link flow statistics 
+
+\hypertarget{classrLink_a4639d6b69acbb669d0cbb7af5cbf152b}{\index{r\-Link@{r\-Link}!get\-Flag@{get\-Flag}}
+\index{get\-Flag@{get\-Flag}!rLink@{r\-Link}}
+\subsubsection[{get\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf r\-Link\-::get\-Flag} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrLink_a4639d6b69acbb669d0cbb7af5cbf152b}
+
+
+\-Gets link usage flag. 
+
+\begin{DoxyReturn}{\-Returns}
+flag 
+\end{DoxyReturn}
+\hypertarget{classrLink_a86c80f0a22f7703601d8a242c2fb471f}{\index{r\-Link@{r\-Link}!get\-Lstat@{get\-Lstat}}
+\index{get\-Lstat@{get\-Lstat}!rLink@{r\-Link}}
+\subsubsection[{get\-Lstat}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ double $>$ {\bf r\-Link\-::get\-Lstat} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrLink_a86c80f0a22f7703601d8a242c2fb471f}
+
+
+\-Gets link flow statistics. 
+
+\begin{DoxyReturn}{\-Returns}
+current flow amount in the link 
+\end{DoxyReturn}
+\hypertarget{classrLink_aa840b5668425c224a451ec1663754a82}{\index{r\-Link@{r\-Link}!get\-Residual@{get\-Residual}}
+\index{get\-Residual@{get\-Residual}!rLink@{r\-Link}}
+\subsubsection[{get\-Residual}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf r\-Link\-::get\-Residual} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrLink_aa840b5668425c224a451ec1663754a82}
+
+
+\-Gets residual capacity of a link. 
+
+\begin{DoxyReturn}{\-Returns}
+link residual capacity 
+\end{DoxyReturn}
+\hypertarget{classrLink_a15022659ea92d086138f817203ede689}{\index{r\-Link@{r\-Link}!set\-Flag@{set\-Flag}}
+\index{set\-Flag@{set\-Flag}!rLink@{r\-Link}}
+\subsubsection[{set\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf r\-Link\-::set\-Flag} (
+\begin{DoxyParamCaption}
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)}}\label{classrLink_a15022659ea92d086138f817203ede689}
+
+
+\-Sets link flag. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em flag} & link usage flag\-: 1 if a link is used, otherwise 0 \\
+\hline
+\end{DoxyParams}
+\hypertarget{classrLink_a719c8cee2887f566dd4e0ca6df81f0de}{\index{r\-Link@{r\-Link}!set\-Lstat@{set\-Lstat}}
+\index{set\-Lstat@{set\-Lstat}!rLink@{r\-Link}}
+\subsubsection[{set\-Lstat}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf r\-Link\-::set\-Lstat} (
+\begin{DoxyParamCaption}
+\item[{double}]{s}
+\end{DoxyParamCaption}
+)}}\label{classrLink_a719c8cee2887f566dd4e0ca6df81f0de}
+
+
+\-Sets link flow statistics. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em s} & amount of flow to use a link \\
+\hline
+\end{DoxyParams}
+\hypertarget{classrLink_a7ac5fdbd1b4fc92cbfd5d8e421477148}{\index{r\-Link@{r\-Link}!set\-Residual@{set\-Residual}}
+\index{set\-Residual@{set\-Residual}!rLink@{r\-Link}}
+\subsubsection[{set\-Residual}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf r\-Link\-::set\-Residual} (
+\begin{DoxyParamCaption}
+\item[{double}]{residual}
+\end{DoxyParamCaption}
+)}}\label{classrLink_a7ac5fdbd1b4fc92cbfd5d8e421477148}
+
+
+\-Sets residual capacity of a link. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em residual} & \\
+\hline
+\end{DoxyParams}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/include/\hyperlink{rLink_8h}{r\-Link.\-h}\item 
+/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/\hyperlink{rLink_8cpp}{r\-Link.\-cpp}\end{DoxyCompactItemize}

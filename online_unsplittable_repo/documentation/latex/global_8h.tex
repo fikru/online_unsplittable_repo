@@ -1,0 +1,183 @@
+\hypertarget{global_8h}{\section{/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/include/global.h \-File \-Reference}
+\label{global_8h}\index{/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/include/global.\-h@{/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/include/global.\-h}}
+}
+{\ttfamily \#include $<$vector$>$}\*
+{\ttfamily \#include $<$list$>$}\*
+{\ttfamily \#include \char`\"{}router.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}statistics.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}multistage.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}measurement.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}device\-Setup.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}parser.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}sorter.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}packing.\-h\char`\"{}}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{global_8h_a4b069399b49024fe80d155d22c2b6c1b}{\-\_\-\-R\-O\-U\-T\-E\-R}
+\item 
+\#define \hyperlink{global_8h_a0f16e52e3217fbfc0adb34a06cbc3621}{\-\_\-\-R\-E\-S\-U\-L\-T}
+\begin{DoxyCompactList}\small\item\em to display some results to see if the algorithm is working properly or not \end{DoxyCompactList}\item 
+\#define \hyperlink{global_8h_a36c17f10ff1ad652b64d3fea7d1a01f7}{\-\_\-\-L\-I\-N\-K\-\_\-\-R\-O\-U\-T\-E\-R\-\_\-\-P\-O\-W\-E\-R\-\_\-\-S\-O\-R\-T}
+\begin{DoxyCompactList}\small\item\em consider both link and router power consumption in ordering the routers \end{DoxyCompactList}\item 
+\#define \hyperlink{global_8h_ad1c3ebe51e1dbc1f2a7d5ea13a12407e}{\-\_\-\-F\-I\-R\-S\-T\-\_\-\-F\-I\-T}
+\begin{DoxyCompactList}\small\item\em first fit algorithm \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{global_8h_a77899fcfaf7ced1f39a1174db191afd7}{free\-\_\-mem} (\hyperlink{classmultistage}{multistage} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{global_8h_a23c002e697540747a04aa4ee0263cbd6}{\-L\-\_\-\-M\-A\-X\-\_\-\-C\-A\-P\-A\-C\-I\-T\-Y} = 800
+\begin{DoxyCompactList}\small\item\em possible max link capacity \end{DoxyCompactList}\item 
+const int \hyperlink{global_8h_a642f61aabe37e509cb024dda58d48099}{\-L\-\_\-\-M\-I\-N\-\_\-\-C\-A\-P\-A\-C\-I\-T\-Y} = 80
+\begin{DoxyCompactList}\small\item\em possible min link capacity \end{DoxyCompactList}\item 
+int \hyperlink{global_8h_a14328a11ac1e9bc5a669e2d0341e2f54}{nr\-\_\-flows}
+\begin{DoxyCompactList}\small\item\em nr of traffic flows \end{DoxyCompactList}\item 
+int \hyperlink{global_8h_ac430c7b9fb12fc01885b9465364e3d97}{nr\-\_\-routers}
+\begin{DoxyCompactList}\small\item\em nr of routers in the architecture \end{DoxyCompactList}\item 
+int \hyperlink{global_8h_a3288b1e9f09032f99fdd54cfd4a26aa9}{nr\-\_\-links}
+\begin{DoxyCompactList}\small\item\em nr of links in a router \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{global_8h_a49482e053b5a87760f4c3fe1242cd72b}{traffic}
+\begin{DoxyCompactList}\small\item\em traffic needed to be routed \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{global_8h_a1299d2dbbe6f58ee6229ef30aa5f5bde}{r\-\_\-capacity}
+\begin{DoxyCompactList}\small\item\em vector of capacity for each router \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{global_8h_a5b014c61c7abb7b5d95080985d3d2448}{r\-\_\-power}
+\begin{DoxyCompactList}\small\item\em vector of power consumption for each router \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{global_8h_a04f7d3c356c598431b28151df15c7a1e}{l\-\_\-capacity}
+\begin{DoxyCompactList}\small\item\em vector of capacity for each link on a router \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{global_8h_a219826526adf24ccd45b45e6ceab2359}{l\-\_\-power}
+\begin{DoxyCompactList}\small\item\em vector of power consumption of each link on a router \end{DoxyCompactList}\item 
+vector$<$ vector$<$ double $>$ $>$ \hyperlink{global_8h_a33ae934d11ad20d1de64a6d9aba13623}{all\-\_\-l\-\_\-capacity}
+\begin{DoxyCompactList}\small\item\em vector of links on all routers \end{DoxyCompactList}\item 
+vector$<$ vector$<$ double $>$ $>$ \hyperlink{global_8h_a62fe6a3c0e8a9ee6c84275f3a2bb0e79}{all\-\_\-l\-\_\-power}
+\begin{DoxyCompactList}\small\item\em vector of power consumption of links on all routers \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{global_8h_ad1c3ebe51e1dbc1f2a7d5ea13a12407e}{\index{global.\-h@{global.\-h}!\-\_\-\-F\-I\-R\-S\-T\-\_\-\-F\-I\-T@{\-\_\-\-F\-I\-R\-S\-T\-\_\-\-F\-I\-T}}
+\index{\-\_\-\-F\-I\-R\-S\-T\-\_\-\-F\-I\-T@{\-\_\-\-F\-I\-R\-S\-T\-\_\-\-F\-I\-T}!global.h@{global.\-h}}
+\subsubsection[{\-\_\-\-F\-I\-R\-S\-T\-\_\-\-F\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-\_\-\-F\-I\-R\-S\-T\-\_\-\-F\-I\-T}}}\label{global_8h_ad1c3ebe51e1dbc1f2a7d5ea13a12407e}
+
+
+first fit algorithm 
+
+\hypertarget{global_8h_a36c17f10ff1ad652b64d3fea7d1a01f7}{\index{global.\-h@{global.\-h}!\-\_\-\-L\-I\-N\-K\-\_\-\-R\-O\-U\-T\-E\-R\-\_\-\-P\-O\-W\-E\-R\-\_\-\-S\-O\-R\-T@{\-\_\-\-L\-I\-N\-K\-\_\-\-R\-O\-U\-T\-E\-R\-\_\-\-P\-O\-W\-E\-R\-\_\-\-S\-O\-R\-T}}
+\index{\-\_\-\-L\-I\-N\-K\-\_\-\-R\-O\-U\-T\-E\-R\-\_\-\-P\-O\-W\-E\-R\-\_\-\-S\-O\-R\-T@{\-\_\-\-L\-I\-N\-K\-\_\-\-R\-O\-U\-T\-E\-R\-\_\-\-P\-O\-W\-E\-R\-\_\-\-S\-O\-R\-T}!global.h@{global.\-h}}
+\subsubsection[{\-\_\-\-L\-I\-N\-K\-\_\-\-R\-O\-U\-T\-E\-R\-\_\-\-P\-O\-W\-E\-R\-\_\-\-S\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-\_\-\-L\-I\-N\-K\-\_\-\-R\-O\-U\-T\-E\-R\-\_\-\-P\-O\-W\-E\-R\-\_\-\-S\-O\-R\-T}}}\label{global_8h_a36c17f10ff1ad652b64d3fea7d1a01f7}
+
+
+consider both link and router power consumption in ordering the routers 
+
+\hypertarget{global_8h_a0f16e52e3217fbfc0adb34a06cbc3621}{\index{global.\-h@{global.\-h}!\-\_\-\-R\-E\-S\-U\-L\-T@{\-\_\-\-R\-E\-S\-U\-L\-T}}
+\index{\-\_\-\-R\-E\-S\-U\-L\-T@{\-\_\-\-R\-E\-S\-U\-L\-T}!global.h@{global.\-h}}
+\subsubsection[{\-\_\-\-R\-E\-S\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-\_\-\-R\-E\-S\-U\-L\-T}}}\label{global_8h_a0f16e52e3217fbfc0adb34a06cbc3621}
+
+
+to display some results to see if the algorithm is working properly or not 
+
+\hypertarget{global_8h_a4b069399b49024fe80d155d22c2b6c1b}{\index{global.\-h@{global.\-h}!\-\_\-\-R\-O\-U\-T\-E\-R@{\-\_\-\-R\-O\-U\-T\-E\-R}}
+\index{\-\_\-\-R\-O\-U\-T\-E\-R@{\-\_\-\-R\-O\-U\-T\-E\-R}!global.h@{global.\-h}}
+\subsubsection[{\-\_\-\-R\-O\-U\-T\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-\_\-\-R\-O\-U\-T\-E\-R}}}\label{global_8h_a4b069399b49024fe80d155d22c2b6c1b}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{global_8h_a77899fcfaf7ced1f39a1174db191afd7}{\index{global.\-h@{global.\-h}!free\-\_\-mem@{free\-\_\-mem}}
+\index{free\-\_\-mem@{free\-\_\-mem}!global.h@{global.\-h}}
+\subsubsection[{free\-\_\-mem}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf free\-\_\-mem} (
+\begin{DoxyParamCaption}
+\item[{{\bf multistage} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{global_8h_a77899fcfaf7ced1f39a1174db191afd7}
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{global_8h_a33ae934d11ad20d1de64a6d9aba13623}{\index{global.\-h@{global.\-h}!all\-\_\-l\-\_\-capacity@{all\-\_\-l\-\_\-capacity}}
+\index{all\-\_\-l\-\_\-capacity@{all\-\_\-l\-\_\-capacity}!global.h@{global.\-h}}
+\subsubsection[{all\-\_\-l\-\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector $<$double$>$ $>$ {\bf all\-\_\-l\-\_\-capacity}}}\label{global_8h_a33ae934d11ad20d1de64a6d9aba13623}
+
+
+vector of links on all routers 
+
+\hypertarget{global_8h_a62fe6a3c0e8a9ee6c84275f3a2bb0e79}{\index{global.\-h@{global.\-h}!all\-\_\-l\-\_\-power@{all\-\_\-l\-\_\-power}}
+\index{all\-\_\-l\-\_\-power@{all\-\_\-l\-\_\-power}!global.h@{global.\-h}}
+\subsubsection[{all\-\_\-l\-\_\-power}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector $<$double$>$ $>$ {\bf all\-\_\-l\-\_\-power}}}\label{global_8h_a62fe6a3c0e8a9ee6c84275f3a2bb0e79}
+
+
+vector of power consumption of links on all routers 
+
+\hypertarget{global_8h_a04f7d3c356c598431b28151df15c7a1e}{\index{global.\-h@{global.\-h}!l\-\_\-capacity@{l\-\_\-capacity}}
+\index{l\-\_\-capacity@{l\-\_\-capacity}!global.h@{global.\-h}}
+\subsubsection[{l\-\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ {\bf l\-\_\-capacity}}}\label{global_8h_a04f7d3c356c598431b28151df15c7a1e}
+
+
+vector of capacity for each link on a router 
+
+\hypertarget{global_8h_a23c002e697540747a04aa4ee0263cbd6}{\index{global.\-h@{global.\-h}!\-L\-\_\-\-M\-A\-X\-\_\-\-C\-A\-P\-A\-C\-I\-T\-Y@{\-L\-\_\-\-M\-A\-X\-\_\-\-C\-A\-P\-A\-C\-I\-T\-Y}}
+\index{\-L\-\_\-\-M\-A\-X\-\_\-\-C\-A\-P\-A\-C\-I\-T\-Y@{\-L\-\_\-\-M\-A\-X\-\_\-\-C\-A\-P\-A\-C\-I\-T\-Y}!global.h@{global.\-h}}
+\subsubsection[{\-L\-\_\-\-M\-A\-X\-\_\-\-C\-A\-P\-A\-C\-I\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf \-L\-\_\-\-M\-A\-X\-\_\-\-C\-A\-P\-A\-C\-I\-T\-Y} = 800}}\label{global_8h_a23c002e697540747a04aa4ee0263cbd6}
+
+
+possible max link capacity 
+
+\hypertarget{global_8h_a642f61aabe37e509cb024dda58d48099}{\index{global.\-h@{global.\-h}!\-L\-\_\-\-M\-I\-N\-\_\-\-C\-A\-P\-A\-C\-I\-T\-Y@{\-L\-\_\-\-M\-I\-N\-\_\-\-C\-A\-P\-A\-C\-I\-T\-Y}}
+\index{\-L\-\_\-\-M\-I\-N\-\_\-\-C\-A\-P\-A\-C\-I\-T\-Y@{\-L\-\_\-\-M\-I\-N\-\_\-\-C\-A\-P\-A\-C\-I\-T\-Y}!global.h@{global.\-h}}
+\subsubsection[{\-L\-\_\-\-M\-I\-N\-\_\-\-C\-A\-P\-A\-C\-I\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf \-L\-\_\-\-M\-I\-N\-\_\-\-C\-A\-P\-A\-C\-I\-T\-Y} = 80}}\label{global_8h_a642f61aabe37e509cb024dda58d48099}
+
+
+possible min link capacity 
+
+\hypertarget{global_8h_a219826526adf24ccd45b45e6ceab2359}{\index{global.\-h@{global.\-h}!l\-\_\-power@{l\-\_\-power}}
+\index{l\-\_\-power@{l\-\_\-power}!global.h@{global.\-h}}
+\subsubsection[{l\-\_\-power}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ {\bf l\-\_\-power}}}\label{global_8h_a219826526adf24ccd45b45e6ceab2359}
+
+
+vector of power consumption of each link on a router 
+
+\hypertarget{global_8h_a14328a11ac1e9bc5a669e2d0341e2f54}{\index{global.\-h@{global.\-h}!nr\-\_\-flows@{nr\-\_\-flows}}
+\index{nr\-\_\-flows@{nr\-\_\-flows}!global.h@{global.\-h}}
+\subsubsection[{nr\-\_\-flows}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf nr\-\_\-flows}}}\label{global_8h_a14328a11ac1e9bc5a669e2d0341e2f54}
+
+
+nr of traffic flows 
+
+\hypertarget{global_8h_a3288b1e9f09032f99fdd54cfd4a26aa9}{\index{global.\-h@{global.\-h}!nr\-\_\-links@{nr\-\_\-links}}
+\index{nr\-\_\-links@{nr\-\_\-links}!global.h@{global.\-h}}
+\subsubsection[{nr\-\_\-links}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf nr\-\_\-links}}}\label{global_8h_a3288b1e9f09032f99fdd54cfd4a26aa9}
+
+
+nr of links in a router 
+
+\hypertarget{global_8h_ac430c7b9fb12fc01885b9465364e3d97}{\index{global.\-h@{global.\-h}!nr\-\_\-routers@{nr\-\_\-routers}}
+\index{nr\-\_\-routers@{nr\-\_\-routers}!global.h@{global.\-h}}
+\subsubsection[{nr\-\_\-routers}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf nr\-\_\-routers}}}\label{global_8h_ac430c7b9fb12fc01885b9465364e3d97}
+
+
+nr of routers in the architecture 
+
+\hypertarget{global_8h_a1299d2dbbe6f58ee6229ef30aa5f5bde}{\index{global.\-h@{global.\-h}!r\-\_\-capacity@{r\-\_\-capacity}}
+\index{r\-\_\-capacity@{r\-\_\-capacity}!global.h@{global.\-h}}
+\subsubsection[{r\-\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ {\bf r\-\_\-capacity}}}\label{global_8h_a1299d2dbbe6f58ee6229ef30aa5f5bde}
+
+
+vector of capacity for each router 
+
+\hypertarget{global_8h_a5b014c61c7abb7b5d95080985d3d2448}{\index{global.\-h@{global.\-h}!r\-\_\-power@{r\-\_\-power}}
+\index{r\-\_\-power@{r\-\_\-power}!global.h@{global.\-h}}
+\subsubsection[{r\-\_\-power}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ {\bf r\-\_\-power}}}\label{global_8h_a5b014c61c7abb7b5d95080985d3d2448}
+
+
+vector of power consumption for each router 
+
+\hypertarget{global_8h_a49482e053b5a87760f4c3fe1242cd72b}{\index{global.\-h@{global.\-h}!traffic@{traffic}}
+\index{traffic@{traffic}!global.h@{global.\-h}}
+\subsubsection[{traffic}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ {\bf traffic}}}\label{global_8h_a49482e053b5a87760f4c3fe1242cd72b}
+
+
+traffic needed to be routed 
+

@@ -1,0 +1,118 @@
+\hypertarget{classpacking}{\section{packing \-Class \-Reference}
+\label{classpacking}\index{packing@{packing}}
+}
+
+
+\-Implementation of bin packing algorithms.  
+
+
+
+
+{\ttfamily \#include $<$packing.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpacking_ad0cae9459a9abfe4bf76642a232ec2f3}{packing} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classpacking_a985cd1712c1e0c7e9f3927e847383810}{$\sim$packing} ()
+\begin{DoxyCompactList}\small\item\em default destructor \end{DoxyCompactList}\item 
+\hyperlink{classstatistics}{statistics} \hyperlink{classpacking_aa80d123e13482fc9760fd87e44f27e0f}{bin\-\_\-packing} (vector$<$ double $>$ \&, list$<$ \hyperlink{classrouter}{router} $>$ \&)
+\begin{DoxyCompactList}\small\item\em \-Interface to packing algorithms. \end{DoxyCompactList}\item 
+void \hyperlink{classpacking_acd308605e21d05122f19b6673f7496a2}{ff} (vector$<$ double $>$ \&, list$<$ \hyperlink{classrouter}{router} $>$ \&)
+\begin{DoxyCompactList}\small\item\em \-First \-Fit bin packing algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Implementation of bin packing algorithms. 
+
+\-R\-E\-F\-E\-R\-E\-N\-C\-E\-: \-Approximation algorithms for bin packing\-: \-A survey
+\begin{DoxyItemize}
+\item \-First fit (ff) -\/ implemented
+\item \-First fit decreasing (ffd) -\/ implemented
+\item \-Best fit (bf) -\/ not yet implemented
+\item \-Best fit decreasing (bfd) -\/ not yet implemented
+\item \-Worst fit (wf) -\/ not yet implemented
+\item \-Worst fir decreasing (wfd) -\/ not yet implemented 
+\end{DoxyItemize}
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classpacking_ad0cae9459a9abfe4bf76642a232ec2f3}{\index{packing@{packing}!packing@{packing}}
+\index{packing@{packing}!packing@{packing}}
+\subsubsection[{packing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf packing\-::packing} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classpacking_ad0cae9459a9abfe4bf76642a232ec2f3}
+
+
+default constructor 
+
+\hypertarget{classpacking_a985cd1712c1e0c7e9f3927e847383810}{\index{packing@{packing}!$\sim$packing@{$\sim$packing}}
+\index{$\sim$packing@{$\sim$packing}!packing@{packing}}
+\subsubsection[{$\sim$packing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf packing\-::$\sim$packing} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classpacking_a985cd1712c1e0c7e9f3927e847383810}
+
+
+default destructor 
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classpacking_aa80d123e13482fc9760fd87e44f27e0f}{\index{packing@{packing}!bin\-\_\-packing@{bin\-\_\-packing}}
+\index{bin\-\_\-packing@{bin\-\_\-packing}!packing@{packing}}
+\subsubsection[{bin\-\_\-packing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf statistics} {\bf packing\-::bin\-\_\-packing} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ double $>$ \&}]{traffic\-To\-Pack, }
+\item[{list$<$ {\bf router} $>$ \&}]{r\-\_\-list}
+\end{DoxyParamCaption}
+)}}\label{classpacking_aa80d123e13482fc9760fd87e44f27e0f}
+
+
+\-Interface to packing algorithms. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em traffic\-To\-Pack} & input traffic for packing \\
+\hline
+{\em r\-\_\-list} & list of routers to pack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+packing statistics 
+\end{DoxyReturn}
+\hypertarget{classpacking_acd308605e21d05122f19b6673f7496a2}{\index{packing@{packing}!ff@{ff}}
+\index{ff@{ff}!packing@{packing}}
+\subsubsection[{ff}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf packing\-::ff} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ double $>$ \&}]{traffic\-To\-Pack, }
+\item[{list$<$ {\bf router} $>$ \&}]{r\-\_\-list}
+\end{DoxyParamCaption}
+)}}\label{classpacking_acd308605e21d05122f19b6673f7496a2}
+
+
+\-First \-Fit bin packing algorithm. 
+
+forward a flow using the first available backend router and the first available link on that router which have a capacity to handle the flow. \-If such a router is not available, drop the flow. 
+\begin{DoxyParams}{\-Parameters}
+{\em traffic\-To\-Pack} & input traffic for packing \\
+\hline
+{\em r\-\_\-list} & list of routers to pack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+r\-\_\-list list of routers \-P\-R\-O\-C\-E\-S\-S\-:
+\begin{DoxyItemize}
+\item forward a flow using the first available router and the first link available on that router that can handle the flow
+\item update different flow statistics such as residual capacity of a currently used link, lost flows, objective value, etc., on the way 
+\end{DoxyItemize}
+\end{DoxyReturn}
+if flow fits into a link, compute the residual capacity of both the router and the link 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/include/\hyperlink{packing_8h}{packing.\-h}\item 
+/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/\hyperlink{packing_8cpp}{packing.\-cpp}\end{DoxyCompactItemize}
