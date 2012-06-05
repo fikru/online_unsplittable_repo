@@ -234,26 +234,9 @@ int main(int argc, char** argv){
 				}
 			}
 
-			//free_mem(mssr);
 			/*deallocated memory assigned to mssr and cleanup the members*/
 			delete mssr;
 		}
 	}
 	return 0;
 }
-
-///*Free allocated memory*/
-//void free_mem(multistage *mssr){
-//	for(list<router>::iterator r_itr=rList.begin(); r_itr != rList.end(); ++r_itr){
-//		list<rLink> lList;
-//		lList = r_itr->getRListLink();
-//		for(list<rLink>::iterator l_itr = lList.begin(); l_itr != lList.end(); ++l_itr){
-//			l_itr = lList.erase(l_itr); //delete the current object - link
-//			--l_itr;					//because for loop increment it
-//		}
-//		r_itr = rList.erase(r_itr);		//delete the current object - router
-//		--r_itr;						//because for loop increment it
-//	}
-//
-//	delete mssr;
-//}

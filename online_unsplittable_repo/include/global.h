@@ -43,5 +43,4 @@ extern vector<double> l_power;			///<vector of power consumption of each link on
 extern vector<vector <double> > all_l_capacity; 	///<vector of links on all routers
 extern vector<vector <double> > all_l_power;		///<vector of power consumption of links on all routers
 
-void free_mem(multistage *);
 #endif /*GLOBAL_H_*/
