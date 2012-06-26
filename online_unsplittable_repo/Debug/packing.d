@@ -1,4 +1,4 @@
-packing.d: ../packing.cpp \
+packing.d packing.o: ../packing.cpp \
  /media/Data/research/code/localRepository/online_unsplittable_repo/online_unsplittable_repo/include/packing.h \
  /media/Data/research/code/localRepository/online_unsplittable_repo/online_unsplittable_repo/include/global.h \
  /media/Data/research/code/localRepository/online_unsplittable_repo/online_unsplittable_repo/include/router.h \

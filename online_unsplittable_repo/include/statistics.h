@@ -94,11 +94,15 @@ public:
 	 */
 	void clearLostList();
 
-	/**set current traffic*/
-	void setTraffic(std::vector<double> traffic);
+	/**set current traffic
+	 *@param newTraffic input traffic
+	 */
+	void setTraffic(std::vector<double> newTraffic);
 
-	/**set previous traffic*/
-	void setTrafficPrev(std::vector<double> traffic);
+	/**set previous traffic
+	 * @param prevTraffic input traffic
+	 */
+	void setTrafficPrev(std::vector<double> prevTraffic);
 
 };
 

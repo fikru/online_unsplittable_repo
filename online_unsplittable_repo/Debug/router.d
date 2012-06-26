@@ -1,4 +1,4 @@
-router.d: ../router.cpp \
+router.d router.o: ../router.cpp \
  /media/Data/research/code/localRepository/online_unsplittable_repo/online_unsplittable_repo/include/router.h \
  /media/Data/research/code/localRepository/online_unsplittable_repo/online_unsplittable_repo/include/device.h \
  /media/Data/research/code/localRepository/online_unsplittable_repo/online_unsplittable_repo/include/rLink.h \

@@ -43,7 +43,7 @@ all: online_unsplittable_repo
 online_unsplittable_repo: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++  -o "online_unsplittable_repo" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++  -o"online_unsplittable_repo" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

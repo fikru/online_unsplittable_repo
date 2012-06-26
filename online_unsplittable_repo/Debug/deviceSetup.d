@@ -1,4 +1,4 @@
-deviceSetup.d: ../deviceSetup.cpp \
+deviceSetup.d deviceSetup.o: ../deviceSetup.cpp \
  /media/Data/research/code/localRepository/online_unsplittable_repo/online_unsplittable_repo/include/deviceSetup.h \
  /media/Data/research/code/localRepository/online_unsplittable_repo/online_unsplittable_repo/include/global.h \
  /media/Data/research/code/localRepository/online_unsplittable_repo/online_unsplittable_repo/include/router.h \

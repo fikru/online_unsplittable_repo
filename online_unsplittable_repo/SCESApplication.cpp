@@ -84,8 +84,7 @@ int main(int argc, char** argv){
 			firstRun=1;
 			totalTraffic = 0;
 
-			//Give time for the first run - this gives time to synchronize with CPLEX. This may be
-			//because it takes time for CPLEX to write the file
+			//why the erratic behavior without sleep?
 			sleep(1);
 
 			/* Reset the statistics for current heuristic run*/
@@ -127,6 +126,9 @@ int main(int argc, char** argv){
 				/*if there is a change in load, reconfigure the architecture to handle the new traffic*/
 				if(probe.getModTime() != lastModTime){
 
+					//why the erratic behavior without sleep?
+					sleep(1);
+
 					/*set last file modification time*/
 					lastModTime = probe.getModTime();
 
@@ -143,6 +145,8 @@ int main(int argc, char** argv){
 
 					/*sum of the input traffic flows*/
 					totalTraffic = probe.getSum(traffic);
+
+					cout << totalTraffic << " " << mssr_stat.getLoadList().back() << endl;
 
 					if(totalTraffic != mssr_stat.getLoadList().back()){
 						obj = 0;
@@ -207,7 +211,7 @@ int main(int argc, char** argv){
 						#endif
 
 						/*write plot data to file*/
-						if(mssr_stat.getLoadList().back() == 0)		//if it is the first run, then create a new empty file
+						if(mssr_stat.getLoadList().back() == 0 || firstRun)		//if it is the first run, then create a new empty file
 							mode = ios::trunc;
 						else										//else append data to file
 							mode = ios::app;
@@ -215,6 +219,10 @@ int main(int argc, char** argv){
 						if( !out_file ) { // file couldn't be opened
 							cerr << "Error: file could not be opened" << endl;
 							exit(1);
+						}
+						if(mssr_stat.getLoadList().back() == 0 || firstRun){
+							out_file << "Objective" << '\t' << "conf diff" <<  '\t' << "sim time" << endl;
+							out_file << "=========" << '\t' << "=========" <<  '\t' << "========" << endl;
 						}
 						out_file << mssr_stat.getObjectiveList().back() << '\t' << confChangeCount << endl;
 						out_file.close();

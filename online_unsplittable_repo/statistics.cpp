@@ -37,15 +37,15 @@ void statistics::setLoadList(double load){
 	this->loadList.push_back(load);
 }
 
-/**set traffic information*/
-void statistics::setTraffic(vector<double> newTraffic){
+/*set traffic information*/
+void statistics::setTraffic(std::vector<double> newTraffic){
 	this->trafficCurr.clear();
 	for(vector<double>::iterator t_itr = newTraffic.begin(); t_itr != newTraffic.end(); t_itr++)
 		this->trafficCurr.push_back(*t_itr);
 }
 
 //set previous traffic
-void statistics::setTrafficPrev(vector<double> prevTraffic){
+void statistics::setTrafficPrev(std::vector<double> prevTraffic){
 	this->trafficPrev.clear();
 	for(vector<double>::iterator t_itr = prevTraffic.begin(); t_itr != prevTraffic.end(); t_itr++)
 			this->trafficPrev.push_back(*t_itr);
@@ -91,31 +91,29 @@ void statistics::clearLostList(){
 	this->lostList.clear();
 }
 
+///**get traffic difference between current and previous traffic*/
+//vector<double> statistics::getTrafficDiff(){
+//	vector<double> trafficToPack(this->trafficCurr);
+//	for(vector<double>::iterator t_itr = trafficToPack.begin(); t_itr != trafficToPack.end(); ++t_itr){
+//		for(vector<double>::iterator tp_itr = this->trafficPrev.begin(); tp_itr != this->trafficPrev.end(); ++tp_itr){
+//			if(*t_itr == *tp_itr){
+//				trafficToPack.erase(t_itr);
+//				this->trafficPrev.erase(tp_itr);
+//				t_itr = t_itr - 1;
+//				break;
+//			}
+//		}
+//	}
+//	return trafficToPack;
+//}
+
 /**get traffic difference between current and previous traffic*/
 vector<double> statistics::getTrafficDiff(){
 	vector<double> trafficToPack(this->trafficCurr);
-	for(vector<double>::iterator t_itr = trafficToPack.begin(); t_itr != trafficToPack.end(); ++t_itr){
-		cout << *t_itr << " ";
+	vector<double>::iterator t_itr = trafficToPack.begin();
+	for(vector<double>::iterator tp_itr = this->trafficPrev.begin(); tp_itr != this->trafficPrev.end(); ++tp_itr){
+		*t_itr = *t_itr - *tp_itr;
+		t_itr++;
 	}
-	cout << endl;
-	for(vector<double>::iterator t_itr = this->trafficPrev.begin(); t_itr != this->trafficPrev.end(); ++t_itr){
-			cout << *t_itr << " ";
-		}
-		cout << endl;
-	for(vector<double>::iterator t_itr = trafficToPack.begin(); t_itr != trafficToPack.end(); ++t_itr){
-		for(vector<double>::iterator tp_itr = this->trafficPrev.begin(); tp_itr != this->trafficPrev.end(); ++tp_itr){
-			if(*t_itr == *tp_itr){
-				trafficToPack.erase(t_itr);
-				this->trafficPrev.erase(tp_itr);
-				t_itr = t_itr - 1;
-				break;
-			}
-		}
-	}
-	for(vector<double>::iterator t_itr = trafficToPack.begin(); t_itr != trafficToPack.end(); ++t_itr){
-			cout << *t_itr << " ";
-		}
-		cout << endl;
 	return trafficToPack;
 }
-

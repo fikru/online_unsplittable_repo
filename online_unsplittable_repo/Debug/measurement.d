@@ -1,4 +1,4 @@
-measurement.d: ../measurement.cpp \
+measurement.d measurement.o: ../measurement.cpp \
  /media/Data/research/code/localRepository/online_unsplittable_repo/online_unsplittable_repo/include/global.h \
  /media/Data/research/code/localRepository/online_unsplittable_repo/online_unsplittable_repo/include/router.h \
  /media/Data/research/code/localRepository/online_unsplittable_repo/online_unsplittable_repo/include/device.h \

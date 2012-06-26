@@ -1,4 +1,4 @@
-device.d: ../device.cpp \
+device.d device.o: ../device.cpp \
  /media/Data/research/code/localRepository/online_unsplittable_repo/online_unsplittable_repo/include/device.h \
  /media/Data/research/code/localRepository/online_unsplittable_repo/online_unsplittable_repo/include/global.h \
  /media/Data/research/code/localRepository/online_unsplittable_repo/online_unsplittable_repo/include/router.h \
