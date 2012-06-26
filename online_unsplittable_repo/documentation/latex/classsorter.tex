@@ -1,4 +1,5 @@
-\hypertarget{classsorter}{\section{sorter \-Class \-Reference}
+\hypertarget{classsorter}{
+\section{sorter Class Reference}
 \label{classsorter}\index{sorter@{sorter}}
 }
 
@@ -8,136 +9,114 @@ sort routers and links according to their efficiency; also used to sort the inpu
 
 
 
-{\ttfamily \#include $<$sorter.\-h$>$}
+{\ttfamily \#include $<$sorter.h$>$}
 
-\subsection*{\-Public \-Member \-Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classsorter_a0ff82eecc48ab163c3286cee244b7d92}{sorter} ()
-\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em constructor \item\end{DoxyCompactList}\item 
 \hyperlink{classsorter_a27f9666807092c172a5ad6f0048d2b57}{$\sim$sorter} ()
-\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em destructor \item\end{DoxyCompactList}\item 
 void \hyperlink{classsorter_aa5c4e14df085599365f57f144ffb25be}{rsort} (list$<$ \hyperlink{classrouter}{router} $>$ \&)
-\begin{DoxyCompactList}\small\item\em compare each routers with the others \-First -\/ sort the routers according to\-: actual\-Capacity/router power \-Second -\/ sort the links on each router \end{DoxyCompactList}\item 
-list$<$ \hyperlink{classrLink}{r\-Link} $>$ \hyperlink{classsorter_a8c6f644537f597bc5ab57e2012655754}{lsort} (list$<$ \hyperlink{classrLink}{r\-Link} $>$)
-\begin{DoxyCompactList}\small\item\em sorts the links on a router \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em compare each routers with the others First -\/ sort the routers according to: actualCapacity/router power Second -\/ sort the links on each router \item\end{DoxyCompactList}\item 
+list$<$ \hyperlink{classrLink}{rLink} $>$ \hyperlink{classsorter_a8c6f644537f597bc5ab57e2012655754}{lsort} (list$<$ \hyperlink{classrLink}{rLink} $>$)
+\begin{DoxyCompactList}\small\item\em sorts the links on a router \item\end{DoxyCompactList}\item 
 void \hyperlink{classsorter_a4b7e91f19fb0bcb73c1e32d168353b40}{shuffle} (list$<$ \hyperlink{classrouter}{router} $>$ \&)
-\begin{DoxyCompactList}\small\item\em shuffle the list of routers and the links thereof \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em shuffle the list of routers and the links thereof \item\end{DoxyCompactList}\item 
 void \hyperlink{classsorter_ae5717a09e1732631a6edcf122f2498c5}{tsort} (vector$<$ double $>$ \&)
-\begin{DoxyCompactList}\small\item\em sorts the incoming traffic flows \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em sorts the incoming traffic flows \item\end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{\-Detailed \-Description}
-sort routers and links according to their efficiency; also used to sort the input traffic 
+\subsection{Detailed Description}
+sort routers and links according to their efficiency; also used to sort the input traffic After reading the list of routers from a text configuration file, the algorithm sorts the routers according to their efficiency if \_\-ROUTER\_\-POWER\_\-SORT is defined.
 
-\-After reading the list of routers from a text configuration file, the algorithm sorts the routers according to their efficiency if \-\_\-\-R\-O\-U\-T\-E\-R\-\_\-\-P\-O\-W\-E\-R\-\_\-\-S\-O\-R\-T is defined.
-
-\-Procedure\-: \begin{DoxyItemize}
-\item sort the routers according to (only router power considered for sorting the routers)\-: \begin{eqnarray} \eta_{_{NIC-}} = \frac{C_{r}}{P_{r}} \end{eqnarray} \-O\-R (both link and router power considered for sorting the routers) \begin{eqnarray} \eta_{_{NIC+}} = \frac{C_{r}}{P_{r} + \sum_{i=1}^N{P_{rl}}} \end{eqnarray} \item sort the links on each router according to\-: \begin{eqnarray} \eta_{_l} = \frac{C_{rl}}{P_{rl}} \end{eqnarray} 
-\begin{DoxyParams}{\-Parameters}
-{\em r\-List} & list of routers \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{\-Returns}
-r\-List ordered list of routers 
+Procedure: \begin{DoxyItemize}
+\item sort the routers according to (only router power considered for sorting the routers): \begin{eqnarray} \eta_{_{NIC-}} = \frac{C_{r}}{P_{r}} \end{eqnarray} OR (both link and router power considered for sorting the routers) \begin{eqnarray} \eta_{_{NIC+}} = \frac{C_{r}}{P_{r} + \sum_{i=1}^N{P_{rl}}} \end{eqnarray} \item sort the links on each router according to: \begin{eqnarray} \eta_{_l} = \frac{C_{rl}}{P_{rl}} \end{eqnarray} 
+\begin{DoxyParams}{Parameters}
+\item[{\em rList}]list of routers \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rList ordered list of routers 
 \end{DoxyReturn}
 \end{DoxyItemize}
 
 
-\subsection{\-Constructor \& \-Destructor \-Documentation}
-\hypertarget{classsorter_a0ff82eecc48ab163c3286cee244b7d92}{\index{sorter@{sorter}!sorter@{sorter}}
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsorter_a0ff82eecc48ab163c3286cee244b7d92}{
 \index{sorter@{sorter}!sorter@{sorter}}
-\subsubsection[{sorter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sorter\-::sorter} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classsorter_a0ff82eecc48ab163c3286cee244b7d92}
+\index{sorter@{sorter}!sorter@{sorter}}
+\subsubsection[{sorter}]{\setlength{\rightskip}{0pt plus 5cm}sorter::sorter ()}}
+\label{classsorter_a0ff82eecc48ab163c3286cee244b7d92}
 
 
 constructor 
 
-\hypertarget{classsorter_a27f9666807092c172a5ad6f0048d2b57}{\index{sorter@{sorter}!$\sim$sorter@{$\sim$sorter}}
+\hypertarget{classsorter_a27f9666807092c172a5ad6f0048d2b57}{
+\index{sorter@{sorter}!$\sim$sorter@{$\sim$sorter}}
 \index{$\sim$sorter@{$\sim$sorter}!sorter@{sorter}}
-\subsubsection[{$\sim$sorter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sorter\-::$\sim$sorter} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classsorter_a27f9666807092c172a5ad6f0048d2b57}
+\subsubsection[{$\sim$sorter}]{\setlength{\rightskip}{0pt plus 5cm}sorter::$\sim$sorter ()}}
+\label{classsorter_a27f9666807092c172a5ad6f0048d2b57}
 
 
 destructor 
 
 
 
-\subsection{\-Member \-Function \-Documentation}
-\hypertarget{classsorter_a8c6f644537f597bc5ab57e2012655754}{\index{sorter@{sorter}!lsort@{lsort}}
+\subsection{Member Function Documentation}
+\hypertarget{classsorter_a8c6f644537f597bc5ab57e2012655754}{
+\index{sorter@{sorter}!lsort@{lsort}}
 \index{lsort@{lsort}!sorter@{sorter}}
-\subsubsection[{lsort}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ {\bf r\-Link} $>$ {\bf sorter\-::lsort} (
-\begin{DoxyParamCaption}
-\item[{list$<$ {\bf r\-Link} $>$}]{l\-List}
-\end{DoxyParamCaption}
-)}}\label{classsorter_a8c6f644537f597bc5ab57e2012655754}
+\subsubsection[{lsort}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ {\bf rLink} $>$ sorter::lsort (list$<$ {\bf rLink} $>$ {\em lList})}}
+\label{classsorter_a8c6f644537f597bc5ab57e2012655754}
 
 
 sorts the links on a router 
 
 
-\begin{DoxyParams}{\-Parameters}
-{\em l\-List} & list of links to be sorted \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{\-Returns}
-sorted l\-List 
+\begin{DoxyParams}{Parameters}
+\item[{\em lList}]list of links to be sorted \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sorted lList 
 \end{DoxyReturn}
-\hypertarget{classsorter_aa5c4e14df085599365f57f144ffb25be}{\index{sorter@{sorter}!rsort@{rsort}}
+\hypertarget{classsorter_aa5c4e14df085599365f57f144ffb25be}{
+\index{sorter@{sorter}!rsort@{rsort}}
 \index{rsort@{rsort}!sorter@{sorter}}
-\subsubsection[{rsort}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf sorter\-::rsort} (
-\begin{DoxyParamCaption}
-\item[{list$<$ {\bf router} $>$ \&}]{r\-List}
-\end{DoxyParamCaption}
-)}}\label{classsorter_aa5c4e14df085599365f57f144ffb25be}
+\subsubsection[{rsort}]{\setlength{\rightskip}{0pt plus 5cm}void sorter::rsort (list$<$ {\bf router} $>$ \& {\em rList})}}
+\label{classsorter_aa5c4e14df085599365f57f144ffb25be}
 
 
-compare each routers with the others \-First -\/ sort the routers according to\-: actual\-Capacity/router power \-Second -\/ sort the links on each router 
+compare each routers with the others First -\/ sort the routers according to: actualCapacity/router power Second -\/ sort the links on each router 
 
-\hypertarget{classsorter_a4b7e91f19fb0bcb73c1e32d168353b40}{\index{sorter@{sorter}!shuffle@{shuffle}}
+\hypertarget{classsorter_a4b7e91f19fb0bcb73c1e32d168353b40}{
+\index{sorter@{sorter}!shuffle@{shuffle}}
 \index{shuffle@{shuffle}!sorter@{sorter}}
-\subsubsection[{shuffle}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf sorter\-::shuffle} (
-\begin{DoxyParamCaption}
-\item[{list$<$ {\bf router} $>$ \&}]{r\-List}
-\end{DoxyParamCaption}
-)}}\label{classsorter_a4b7e91f19fb0bcb73c1e32d168353b40}
+\subsubsection[{shuffle}]{\setlength{\rightskip}{0pt plus 5cm}void sorter::shuffle (list$<$ {\bf router} $>$ \& {\em rList})}}
+\label{classsorter_a4b7e91f19fb0bcb73c1e32d168353b40}
 
 
 shuffle the list of routers and the links thereof 
 
 
-\begin{DoxyParams}{\-Parameters}
-{\em r\-List} & list of routers \\
-\hline
-\end{DoxyParams}
-\hypertarget{classsorter_ae5717a09e1732631a6edcf122f2498c5}{\index{sorter@{sorter}!tsort@{tsort}}
+\begin{DoxyParams}{Parameters}
+\item[{\em rList}]list of routers \end{DoxyParams}
+\hypertarget{classsorter_ae5717a09e1732631a6edcf122f2498c5}{
+\index{sorter@{sorter}!tsort@{tsort}}
 \index{tsort@{tsort}!sorter@{sorter}}
-\subsubsection[{tsort}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf sorter\-::tsort} (
-\begin{DoxyParamCaption}
-\item[{vector$<$ double $>$ \&}]{traffic}
-\end{DoxyParamCaption}
-)}}\label{classsorter_ae5717a09e1732631a6edcf122f2498c5}
+\subsubsection[{tsort}]{\setlength{\rightskip}{0pt plus 5cm}void sorter::tsort (vector$<$ double $>$ \& {\em traffic})}}
+\label{classsorter_ae5717a09e1732631a6edcf122f2498c5}
 
 
 sorts the incoming traffic flows 
 
 
-\begin{DoxyParams}{\-Parameters}
-{\em traffic} & list of traffic flows \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{\-Returns}
+\begin{DoxyParams}{Parameters}
+\item[{\em traffic}]list of traffic flows \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
 sorted traffic 
 \end{DoxyReturn}
 
 
-\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
-/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/include/\hyperlink{sorter_8h}{sorter.\-h}\item 
-/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/\hyperlink{sorter_8cpp}{sorter.\-cpp}\end{DoxyCompactItemize}
+/media/Data/research/code/online\_\-unsplittable\_\-heuristic/include/\hyperlink{sorter_8h}{sorter.h}\item 
+/media/Data/research/code/online\_\-unsplittable\_\-heuristic/\hyperlink{sorter_8cpp}{sorter.cpp}\end{DoxyCompactItemize}

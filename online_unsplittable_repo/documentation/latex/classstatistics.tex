@@ -1,322 +1,279 @@
-\hypertarget{classstatistics}{\section{statistics \-Class \-Reference}
+\hypertarget{classstatistics}{
+\section{statistics Class Reference}
 \label{classstatistics}\index{statistics@{statistics}}
 }
 
 
-\-Statistics class to collect device states.  
+Statistics class to collect device states.  
 
 
 
 
-{\ttfamily \#include $<$statistics.\-h$>$}
+{\ttfamily \#include $<$statistics.h$>$}
 
-\subsection*{\-Public \-Member \-Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classstatistics_a31d6750c3251c979f5c2d013984e1162}{statistics} ()
-\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em constructor \item\end{DoxyCompactList}\item 
 \hyperlink{classstatistics_a8cf720227802726be118712dc6616f94}{$\sim$statistics} ()
-\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
-std\-::vector$<$ double $>$ \hyperlink{classstatistics_ab2c51b1a4cc826a09473860faf565360}{get\-Forwarded\-List} ()
-\begin{DoxyCompactList}\small\item\em get forwarded traffic list \end{DoxyCompactList}\item 
-std\-::vector$<$ double $>$ \hyperlink{classstatistics_a99795974e97556668c02c5005b2df895}{get\-Lost\-List} ()
-\begin{DoxyCompactList}\small\item\em get lost traffic list \end{DoxyCompactList}\item 
-std\-::vector$<$ long $>$ \hyperlink{classstatistics_a857adb219cf897c105a9e0aceca4188a}{get\-Time\-Adv\-List} ()
-\begin{DoxyCompactList}\small\item\em get advanced time \end{DoxyCompactList}\item 
-std\-::vector$<$ double $>$ \hyperlink{classstatistics_a47b6c911143330c41faa573bc534aee1}{get\-Objective\-List} ()
-\begin{DoxyCompactList}\small\item\em get objective \end{DoxyCompactList}\item 
-std\-::vector$<$ double $>$ \hyperlink{classstatistics_a170d529ea5d3c459755309e2de1d166e}{get\-Load\-List} ()
-\begin{DoxyCompactList}\small\item\em get load \end{DoxyCompactList}\item 
-double \hyperlink{classstatistics_a8a09566df54f2ac183e0a40f452546a6}{get\-Objective} ()
-\begin{DoxyCompactList}\small\item\em get objective previous \end{DoxyCompactList}\item 
-std\-::vector$<$ double $>$ \hyperlink{classstatistics_af512ba48d195d791b927bc49e2c40188}{get\-Traffic} ()
-\begin{DoxyCompactList}\small\item\em get traffic statistics \end{DoxyCompactList}\item 
-std\-::vector$<$ double $>$ \hyperlink{classstatistics_a7aa58e77f08e583a87f9050a5b1cf4f9}{get\-Traffic\-Diff} ()
-\begin{DoxyCompactList}\small\item\em get traffic difference between current and previous traffic \end{DoxyCompactList}\item 
-void \hyperlink{classstatistics_a94f979fcc6d511583638d6fc12116992}{set\-Forwarded\-List} (double)
-\begin{DoxyCompactList}\small\item\em set forwarded traffic list \end{DoxyCompactList}\item 
-void \hyperlink{classstatistics_a84bead3d62e23af1777b5e54c6de48de}{set\-Lost\-List} (double)
-\begin{DoxyCompactList}\small\item\em set lost traffic list \end{DoxyCompactList}\item 
-void \hyperlink{classstatistics_ab2fd434123379e7814c21bc38ff2bb20}{set\-Objective} (double)
-\begin{DoxyCompactList}\small\item\em set current objective \end{DoxyCompactList}\item 
-void \hyperlink{classstatistics_a625258dee0b4eaf0fa5ade3643a4535e}{set\-Objective\-List} (double)
-\begin{DoxyCompactList}\small\item\em put objective in the list \end{DoxyCompactList}\item 
-void \hyperlink{classstatistics_af1594f7585e2c0776ef2f8fb7ddd3fca}{set\-Load\-List} (double)
-\begin{DoxyCompactList}\small\item\em set load \end{DoxyCompactList}\item 
-void \hyperlink{classstatistics_aa371004886cf08d7632027c575d983fc}{clear\-Forward\-List} ()
-\begin{DoxyCompactList}\small\item\em clear the forwarded traffic list \end{DoxyCompactList}\item 
-void \hyperlink{classstatistics_a897546605e8b6c2b2ec411092e89dab8}{clear\-Lost\-List} ()
-\begin{DoxyCompactList}\small\item\em clear the lost traffic list \end{DoxyCompactList}\item 
-void \hyperlink{classstatistics_a8eac6ae2c2c67ba31213549822c4ce32}{set\-Traffic} (std\-::vector$<$ double $>$ \hyperlink{parser_8cpp_a49482e053b5a87760f4c3fe1242cd72b}{traffic})
-\begin{DoxyCompactList}\small\item\em set current traffic \end{DoxyCompactList}\item 
-void \hyperlink{classstatistics_a6d9d539aa95a348aff20fd022b9a35b0}{set\-Traffic\-Prev} (std\-::vector$<$ double $>$ \hyperlink{parser_8cpp_a49482e053b5a87760f4c3fe1242cd72b}{traffic})
-\begin{DoxyCompactList}\small\item\em set previous traffic \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em destructor \item\end{DoxyCompactList}\item 
+std::vector$<$ double $>$ \hyperlink{classstatistics_ab2c51b1a4cc826a09473860faf565360}{getForwardedList} ()
+\begin{DoxyCompactList}\small\item\em get forwarded traffic list \item\end{DoxyCompactList}\item 
+std::vector$<$ double $>$ \hyperlink{classstatistics_a99795974e97556668c02c5005b2df895}{getLostList} ()
+\begin{DoxyCompactList}\small\item\em get lost traffic list \item\end{DoxyCompactList}\item 
+std::vector$<$ long $>$ \hyperlink{classstatistics_a857adb219cf897c105a9e0aceca4188a}{getTimeAdvList} ()
+\begin{DoxyCompactList}\small\item\em get advanced time \item\end{DoxyCompactList}\item 
+std::vector$<$ double $>$ \hyperlink{classstatistics_a47b6c911143330c41faa573bc534aee1}{getObjectiveList} ()
+\begin{DoxyCompactList}\small\item\em get objective \item\end{DoxyCompactList}\item 
+std::vector$<$ double $>$ \hyperlink{classstatistics_a170d529ea5d3c459755309e2de1d166e}{getLoadList} ()
+\begin{DoxyCompactList}\small\item\em get load \item\end{DoxyCompactList}\item 
+double \hyperlink{classstatistics_a8a09566df54f2ac183e0a40f452546a6}{getObjective} ()
+\begin{DoxyCompactList}\small\item\em get objective previous \item\end{DoxyCompactList}\item 
+std::vector$<$ double $>$ \hyperlink{classstatistics_af512ba48d195d791b927bc49e2c40188}{getTraffic} ()
+\begin{DoxyCompactList}\small\item\em get traffic statistics \item\end{DoxyCompactList}\item 
+std::vector$<$ double $>$ \hyperlink{classstatistics_a7aa58e77f08e583a87f9050a5b1cf4f9}{getTrafficDiff} ()
+\begin{DoxyCompactList}\small\item\em get traffic difference between current and previous traffic \item\end{DoxyCompactList}\item 
+void \hyperlink{classstatistics_a94f979fcc6d511583638d6fc12116992}{setForwardedList} (double)
+\begin{DoxyCompactList}\small\item\em set forwarded traffic list \item\end{DoxyCompactList}\item 
+void \hyperlink{classstatistics_a84bead3d62e23af1777b5e54c6de48de}{setLostList} (double)
+\begin{DoxyCompactList}\small\item\em set lost traffic list \item\end{DoxyCompactList}\item 
+void \hyperlink{classstatistics_ab2fd434123379e7814c21bc38ff2bb20}{setObjective} (double)
+\begin{DoxyCompactList}\small\item\em set current objective \item\end{DoxyCompactList}\item 
+void \hyperlink{classstatistics_a625258dee0b4eaf0fa5ade3643a4535e}{setObjectiveList} (double)
+\begin{DoxyCompactList}\small\item\em put objective in the list \item\end{DoxyCompactList}\item 
+void \hyperlink{classstatistics_af1594f7585e2c0776ef2f8fb7ddd3fca}{setLoadList} (double)
+\begin{DoxyCompactList}\small\item\em set load \item\end{DoxyCompactList}\item 
+void \hyperlink{classstatistics_aa371004886cf08d7632027c575d983fc}{clearForwardList} ()
+\begin{DoxyCompactList}\small\item\em clear the forwarded traffic list \item\end{DoxyCompactList}\item 
+void \hyperlink{classstatistics_a897546605e8b6c2b2ec411092e89dab8}{clearLostList} ()
+\begin{DoxyCompactList}\small\item\em clear the lost traffic list \item\end{DoxyCompactList}\item 
+void \hyperlink{classstatistics_a3eca72da112aae2a944b7dc40a59b787}{setTraffic} (std::vector$<$ double $>$ newTraffic)
+\begin{DoxyCompactList}\small\item\em set current traffic \item\end{DoxyCompactList}\item 
+void \hyperlink{classstatistics_ae5d56a6dc6878004b42d10369de284de}{setTrafficPrev} (std::vector$<$ double $>$ prevTraffic)
+\begin{DoxyCompactList}\small\item\em set previous traffic \item\end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{\-Detailed \-Description}
-\-Statistics class to collect device states. 
+\subsection{Detailed Description}
+Statistics class to collect device states. General traffic statistics -\/ such as lost traffic, total forwarded traffic, total power consumption (objective) 
 
-\-General traffic statistics -\/ such as lost traffic, total forwarded traffic, total power consumption (objective) 
-
-\subsection{\-Constructor \& \-Destructor \-Documentation}
-\hypertarget{classstatistics_a31d6750c3251c979f5c2d013984e1162}{\index{statistics@{statistics}!statistics@{statistics}}
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classstatistics_a31d6750c3251c979f5c2d013984e1162}{
 \index{statistics@{statistics}!statistics@{statistics}}
-\subsubsection[{statistics}]{\setlength{\rightskip}{0pt plus 5cm}{\bf statistics\-::statistics} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_a31d6750c3251c979f5c2d013984e1162}
+\index{statistics@{statistics}!statistics@{statistics}}
+\subsubsection[{statistics}]{\setlength{\rightskip}{0pt plus 5cm}statistics::statistics ()}}
+\label{classstatistics_a31d6750c3251c979f5c2d013984e1162}
 
 
 constructor 
 
-\hypertarget{classstatistics_a8cf720227802726be118712dc6616f94}{\index{statistics@{statistics}!$\sim$statistics@{$\sim$statistics}}
+\hypertarget{classstatistics_a8cf720227802726be118712dc6616f94}{
+\index{statistics@{statistics}!$\sim$statistics@{$\sim$statistics}}
 \index{$\sim$statistics@{$\sim$statistics}!statistics@{statistics}}
-\subsubsection[{$\sim$statistics}]{\setlength{\rightskip}{0pt plus 5cm}{\bf statistics\-::$\sim$statistics} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classstatistics_a8cf720227802726be118712dc6616f94}
+\subsubsection[{$\sim$statistics}]{\setlength{\rightskip}{0pt plus 5cm}statistics::$\sim$statistics ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classstatistics_a8cf720227802726be118712dc6616f94}
 
 
 destructor 
 
 
 
-\subsection{\-Member \-Function \-Documentation}
-\hypertarget{classstatistics_aa371004886cf08d7632027c575d983fc}{\index{statistics@{statistics}!clear\-Forward\-List@{clear\-Forward\-List}}
-\index{clear\-Forward\-List@{clear\-Forward\-List}!statistics@{statistics}}
-\subsubsection[{clear\-Forward\-List}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf statistics\-::clear\-Forward\-List} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_aa371004886cf08d7632027c575d983fc}
+\subsection{Member Function Documentation}
+\hypertarget{classstatistics_aa371004886cf08d7632027c575d983fc}{
+\index{statistics@{statistics}!clearForwardList@{clearForwardList}}
+\index{clearForwardList@{clearForwardList}!statistics@{statistics}}
+\subsubsection[{clearForwardList}]{\setlength{\rightskip}{0pt plus 5cm}void statistics::clearForwardList ()}}
+\label{classstatistics_aa371004886cf08d7632027c575d983fc}
 
 
 clear the forwarded traffic list 
 
-\hypertarget{classstatistics_a897546605e8b6c2b2ec411092e89dab8}{\index{statistics@{statistics}!clear\-Lost\-List@{clear\-Lost\-List}}
-\index{clear\-Lost\-List@{clear\-Lost\-List}!statistics@{statistics}}
-\subsubsection[{clear\-Lost\-List}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf statistics\-::clear\-Lost\-List} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_a897546605e8b6c2b2ec411092e89dab8}
+\hypertarget{classstatistics_a897546605e8b6c2b2ec411092e89dab8}{
+\index{statistics@{statistics}!clearLostList@{clearLostList}}
+\index{clearLostList@{clearLostList}!statistics@{statistics}}
+\subsubsection[{clearLostList}]{\setlength{\rightskip}{0pt plus 5cm}void statistics::clearLostList ()}}
+\label{classstatistics_a897546605e8b6c2b2ec411092e89dab8}
 
 
 clear the lost traffic list 
 
-\hypertarget{classstatistics_ab2c51b1a4cc826a09473860faf565360}{\index{statistics@{statistics}!get\-Forwarded\-List@{get\-Forwarded\-List}}
-\index{get\-Forwarded\-List@{get\-Forwarded\-List}!statistics@{statistics}}
-\subsubsection[{get\-Forwarded\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ double $>$ {\bf statistics\-::get\-Forwarded\-List} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_ab2c51b1a4cc826a09473860faf565360}
+\hypertarget{classstatistics_ab2c51b1a4cc826a09473860faf565360}{
+\index{statistics@{statistics}!getForwardedList@{getForwardedList}}
+\index{getForwardedList@{getForwardedList}!statistics@{statistics}}
+\subsubsection[{getForwardedList}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ double $>$ statistics::getForwardedList ()}}
+\label{classstatistics_ab2c51b1a4cc826a09473860faf565360}
 
 
 get forwarded traffic list 
 
-\begin{DoxyReturn}{\-Returns}
+\begin{DoxyReturn}{Returns}
 forwarded traffic list 
 \end{DoxyReturn}
-\hypertarget{classstatistics_a170d529ea5d3c459755309e2de1d166e}{\index{statistics@{statistics}!get\-Load\-List@{get\-Load\-List}}
-\index{get\-Load\-List@{get\-Load\-List}!statistics@{statistics}}
-\subsubsection[{get\-Load\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ double $>$ {\bf statistics\-::get\-Load\-List} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_a170d529ea5d3c459755309e2de1d166e}
+\hypertarget{classstatistics_a170d529ea5d3c459755309e2de1d166e}{
+\index{statistics@{statistics}!getLoadList@{getLoadList}}
+\index{getLoadList@{getLoadList}!statistics@{statistics}}
+\subsubsection[{getLoadList}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ double $>$ statistics::getLoadList ()}}
+\label{classstatistics_a170d529ea5d3c459755309e2de1d166e}
 
 
 get load 
 
-\begin{DoxyReturn}{\-Returns}
+\begin{DoxyReturn}{Returns}
 list of loads 
 \end{DoxyReturn}
-\hypertarget{classstatistics_a99795974e97556668c02c5005b2df895}{\index{statistics@{statistics}!get\-Lost\-List@{get\-Lost\-List}}
-\index{get\-Lost\-List@{get\-Lost\-List}!statistics@{statistics}}
-\subsubsection[{get\-Lost\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ double $>$ {\bf statistics\-::get\-Lost\-List} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_a99795974e97556668c02c5005b2df895}
+\hypertarget{classstatistics_a99795974e97556668c02c5005b2df895}{
+\index{statistics@{statistics}!getLostList@{getLostList}}
+\index{getLostList@{getLostList}!statistics@{statistics}}
+\subsubsection[{getLostList}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ double $>$ statistics::getLostList ()}}
+\label{classstatistics_a99795974e97556668c02c5005b2df895}
 
 
 get lost traffic list 
 
-\begin{DoxyReturn}{\-Returns}
+\begin{DoxyReturn}{Returns}
 lost traffic list 
 \end{DoxyReturn}
-\hypertarget{classstatistics_a8a09566df54f2ac183e0a40f452546a6}{\index{statistics@{statistics}!get\-Objective@{get\-Objective}}
-\index{get\-Objective@{get\-Objective}!statistics@{statistics}}
-\subsubsection[{get\-Objective}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf statistics\-::get\-Objective} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_a8a09566df54f2ac183e0a40f452546a6}
+\hypertarget{classstatistics_a8a09566df54f2ac183e0a40f452546a6}{
+\index{statistics@{statistics}!getObjective@{getObjective}}
+\index{getObjective@{getObjective}!statistics@{statistics}}
+\subsubsection[{getObjective}]{\setlength{\rightskip}{0pt plus 5cm}double statistics::getObjective ()}}
+\label{classstatistics_a8a09566df54f2ac183e0a40f452546a6}
 
 
 get objective previous 
 
-\begin{DoxyReturn}{\-Returns}
+\begin{DoxyReturn}{Returns}
 total power consumption of the previous configuration of the architecture 
 \end{DoxyReturn}
-\hypertarget{classstatistics_a47b6c911143330c41faa573bc534aee1}{\index{statistics@{statistics}!get\-Objective\-List@{get\-Objective\-List}}
-\index{get\-Objective\-List@{get\-Objective\-List}!statistics@{statistics}}
-\subsubsection[{get\-Objective\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ double $>$ {\bf statistics\-::get\-Objective\-List} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_a47b6c911143330c41faa573bc534aee1}
+\hypertarget{classstatistics_a47b6c911143330c41faa573bc534aee1}{
+\index{statistics@{statistics}!getObjectiveList@{getObjectiveList}}
+\index{getObjectiveList@{getObjectiveList}!statistics@{statistics}}
+\subsubsection[{getObjectiveList}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ double $>$ statistics::getObjectiveList ()}}
+\label{classstatistics_a47b6c911143330c41faa573bc534aee1}
 
 
 get objective 
 
-\begin{DoxyReturn}{\-Returns}
+\begin{DoxyReturn}{Returns}
 list of total power consumption of the architecture 
 \end{DoxyReturn}
-\hypertarget{classstatistics_a857adb219cf897c105a9e0aceca4188a}{\index{statistics@{statistics}!get\-Time\-Adv\-List@{get\-Time\-Adv\-List}}
-\index{get\-Time\-Adv\-List@{get\-Time\-Adv\-List}!statistics@{statistics}}
-\subsubsection[{get\-Time\-Adv\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$long$>$ {\bf statistics\-::get\-Time\-Adv\-List} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_a857adb219cf897c105a9e0aceca4188a}
+\hypertarget{classstatistics_a857adb219cf897c105a9e0aceca4188a}{
+\index{statistics@{statistics}!getTimeAdvList@{getTimeAdvList}}
+\index{getTimeAdvList@{getTimeAdvList}!statistics@{statistics}}
+\subsubsection[{getTimeAdvList}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$long$>$ statistics::getTimeAdvList ()}}
+\label{classstatistics_a857adb219cf897c105a9e0aceca4188a}
 
 
 get advanced time 
 
-\begin{DoxyReturn}{\-Returns}
+\begin{DoxyReturn}{Returns}
 time required for packing 
 \end{DoxyReturn}
-\hypertarget{classstatistics_af512ba48d195d791b927bc49e2c40188}{\index{statistics@{statistics}!get\-Traffic@{get\-Traffic}}
-\index{get\-Traffic@{get\-Traffic}!statistics@{statistics}}
-\subsubsection[{get\-Traffic}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ double $>$ {\bf statistics\-::get\-Traffic} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_af512ba48d195d791b927bc49e2c40188}
+\hypertarget{classstatistics_af512ba48d195d791b927bc49e2c40188}{
+\index{statistics@{statistics}!getTraffic@{getTraffic}}
+\index{getTraffic@{getTraffic}!statistics@{statistics}}
+\subsubsection[{getTraffic}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ double $>$ statistics::getTraffic ()}}
+\label{classstatistics_af512ba48d195d791b927bc49e2c40188}
 
 
 get traffic statistics 
 
-\hypertarget{classstatistics_a7aa58e77f08e583a87f9050a5b1cf4f9}{\index{statistics@{statistics}!get\-Traffic\-Diff@{get\-Traffic\-Diff}}
-\index{get\-Traffic\-Diff@{get\-Traffic\-Diff}!statistics@{statistics}}
-\subsubsection[{get\-Traffic\-Diff}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ double $>$ {\bf statistics\-::get\-Traffic\-Diff} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_a7aa58e77f08e583a87f9050a5b1cf4f9}
+\hypertarget{classstatistics_a7aa58e77f08e583a87f9050a5b1cf4f9}{
+\index{statistics@{statistics}!getTrafficDiff@{getTrafficDiff}}
+\index{getTrafficDiff@{getTrafficDiff}!statistics@{statistics}}
+\subsubsection[{getTrafficDiff}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ double $>$ statistics::getTrafficDiff ()}}
+\label{classstatistics_a7aa58e77f08e583a87f9050a5b1cf4f9}
 
 
 get traffic difference between current and previous traffic 
 
-\hypertarget{classstatistics_a94f979fcc6d511583638d6fc12116992}{\index{statistics@{statistics}!set\-Forwarded\-List@{set\-Forwarded\-List}}
-\index{set\-Forwarded\-List@{set\-Forwarded\-List}!statistics@{statistics}}
-\subsubsection[{set\-Forwarded\-List}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf statistics\-::set\-Forwarded\-List} (
-\begin{DoxyParamCaption}
-\item[{double}]{forwarded}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_a94f979fcc6d511583638d6fc12116992}
+\hypertarget{classstatistics_a94f979fcc6d511583638d6fc12116992}{
+\index{statistics@{statistics}!setForwardedList@{setForwardedList}}
+\index{setForwardedList@{setForwardedList}!statistics@{statistics}}
+\subsubsection[{setForwardedList}]{\setlength{\rightskip}{0pt plus 5cm}void statistics::setForwardedList (double {\em forwarded})}}
+\label{classstatistics_a94f979fcc6d511583638d6fc12116992}
 
 
 set forwarded traffic list 
 
 
-\begin{DoxyParams}{\-Parameters}
-{\em forwarded} & routed traffic \\
-\hline
-\end{DoxyParams}
-\hypertarget{classstatistics_af1594f7585e2c0776ef2f8fb7ddd3fca}{\index{statistics@{statistics}!set\-Load\-List@{set\-Load\-List}}
-\index{set\-Load\-List@{set\-Load\-List}!statistics@{statistics}}
-\subsubsection[{set\-Load\-List}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf statistics\-::set\-Load\-List} (
-\begin{DoxyParamCaption}
-\item[{double}]{load}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_af1594f7585e2c0776ef2f8fb7ddd3fca}
+\begin{DoxyParams}{Parameters}
+\item[{\em forwarded}]routed traffic \end{DoxyParams}
+\hypertarget{classstatistics_af1594f7585e2c0776ef2f8fb7ddd3fca}{
+\index{statistics@{statistics}!setLoadList@{setLoadList}}
+\index{setLoadList@{setLoadList}!statistics@{statistics}}
+\subsubsection[{setLoadList}]{\setlength{\rightskip}{0pt plus 5cm}void statistics::setLoadList (double {\em load})}}
+\label{classstatistics_af1594f7585e2c0776ef2f8fb7ddd3fca}
 
 
 set load 
 
 
-\begin{DoxyParams}{\-Parameters}
-{\em load} & current traffic amount to be forwarded \\
-\hline
-\end{DoxyParams}
-\hypertarget{classstatistics_a84bead3d62e23af1777b5e54c6de48de}{\index{statistics@{statistics}!set\-Lost\-List@{set\-Lost\-List}}
-\index{set\-Lost\-List@{set\-Lost\-List}!statistics@{statistics}}
-\subsubsection[{set\-Lost\-List}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf statistics\-::set\-Lost\-List} (
-\begin{DoxyParamCaption}
-\item[{double}]{lost}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_a84bead3d62e23af1777b5e54c6de48de}
+\begin{DoxyParams}{Parameters}
+\item[{\em load}]current traffic amount to be forwarded \end{DoxyParams}
+\hypertarget{classstatistics_a84bead3d62e23af1777b5e54c6de48de}{
+\index{statistics@{statistics}!setLostList@{setLostList}}
+\index{setLostList@{setLostList}!statistics@{statistics}}
+\subsubsection[{setLostList}]{\setlength{\rightskip}{0pt plus 5cm}void statistics::setLostList (double {\em lost})}}
+\label{classstatistics_a84bead3d62e23af1777b5e54c6de48de}
 
 
 set lost traffic list 
 
 
-\begin{DoxyParams}{\-Parameters}
-{\em lost} & traffic that is not routed because of lack of capacity \\
-\hline
-\end{DoxyParams}
-\hypertarget{classstatistics_ab2fd434123379e7814c21bc38ff2bb20}{\index{statistics@{statistics}!set\-Objective@{set\-Objective}}
-\index{set\-Objective@{set\-Objective}!statistics@{statistics}}
-\subsubsection[{set\-Objective}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf statistics\-::set\-Objective} (
-\begin{DoxyParamCaption}
-\item[{double}]{objective}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_ab2fd434123379e7814c21bc38ff2bb20}
+\begin{DoxyParams}{Parameters}
+\item[{\em lost}]traffic that is not routed because of lack of capacity \end{DoxyParams}
+\hypertarget{classstatistics_ab2fd434123379e7814c21bc38ff2bb20}{
+\index{statistics@{statistics}!setObjective@{setObjective}}
+\index{setObjective@{setObjective}!statistics@{statistics}}
+\subsubsection[{setObjective}]{\setlength{\rightskip}{0pt plus 5cm}void statistics::setObjective (double {\em objective})}}
+\label{classstatistics_ab2fd434123379e7814c21bc38ff2bb20}
 
 
 set current objective 
 
 
-\begin{DoxyParams}{\-Parameters}
-{\em objective} & power consumption of current configuration \\
-\hline
-\end{DoxyParams}
-\hypertarget{classstatistics_a625258dee0b4eaf0fa5ade3643a4535e}{\index{statistics@{statistics}!set\-Objective\-List@{set\-Objective\-List}}
-\index{set\-Objective\-List@{set\-Objective\-List}!statistics@{statistics}}
-\subsubsection[{set\-Objective\-List}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf statistics\-::set\-Objective\-List} (
-\begin{DoxyParamCaption}
-\item[{double}]{objective}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_a625258dee0b4eaf0fa5ade3643a4535e}
+\begin{DoxyParams}{Parameters}
+\item[{\em objective}]power consumption of current configuration \end{DoxyParams}
+\hypertarget{classstatistics_a625258dee0b4eaf0fa5ade3643a4535e}{
+\index{statistics@{statistics}!setObjectiveList@{setObjectiveList}}
+\index{setObjectiveList@{setObjectiveList}!statistics@{statistics}}
+\subsubsection[{setObjectiveList}]{\setlength{\rightskip}{0pt plus 5cm}void statistics::setObjectiveList (double {\em objective})}}
+\label{classstatistics_a625258dee0b4eaf0fa5ade3643a4535e}
 
 
 put objective in the list 
 
 
-\begin{DoxyParams}{\-Parameters}
-{\em objective} & power consumption of current configuration \\
-\hline
-\end{DoxyParams}
-\hypertarget{classstatistics_a8eac6ae2c2c67ba31213549822c4ce32}{\index{statistics@{statistics}!set\-Traffic@{set\-Traffic}}
-\index{set\-Traffic@{set\-Traffic}!statistics@{statistics}}
-\subsubsection[{set\-Traffic}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf statistics\-::set\-Traffic} (
-\begin{DoxyParamCaption}
-\item[{std\-::vector$<$ double $>$}]{traffic}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_a8eac6ae2c2c67ba31213549822c4ce32}
+\begin{DoxyParams}{Parameters}
+\item[{\em objective}]power consumption of current configuration \end{DoxyParams}
+\hypertarget{classstatistics_a3eca72da112aae2a944b7dc40a59b787}{
+\index{statistics@{statistics}!setTraffic@{setTraffic}}
+\index{setTraffic@{setTraffic}!statistics@{statistics}}
+\subsubsection[{setTraffic}]{\setlength{\rightskip}{0pt plus 5cm}void statistics::setTraffic (std::vector$<$ double $>$ {\em newTraffic})}}
+\label{classstatistics_a3eca72da112aae2a944b7dc40a59b787}
 
 
 set current traffic 
 
-set traffic information \hypertarget{classstatistics_a6d9d539aa95a348aff20fd022b9a35b0}{\index{statistics@{statistics}!set\-Traffic\-Prev@{set\-Traffic\-Prev}}
-\index{set\-Traffic\-Prev@{set\-Traffic\-Prev}!statistics@{statistics}}
-\subsubsection[{set\-Traffic\-Prev}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf statistics\-::set\-Traffic\-Prev} (
-\begin{DoxyParamCaption}
-\item[{std\-::vector$<$ double $>$}]{traffic}
-\end{DoxyParamCaption}
-)}}\label{classstatistics_a6d9d539aa95a348aff20fd022b9a35b0}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em newTraffic}]input traffic \end{DoxyParams}
+\hypertarget{classstatistics_ae5d56a6dc6878004b42d10369de284de}{
+\index{statistics@{statistics}!setTrafficPrev@{setTrafficPrev}}
+\index{setTrafficPrev@{setTrafficPrev}!statistics@{statistics}}
+\subsubsection[{setTrafficPrev}]{\setlength{\rightskip}{0pt plus 5cm}void statistics::setTrafficPrev (std::vector$<$ double $>$ {\em prevTraffic})}}
+\label{classstatistics_ae5d56a6dc6878004b42d10369de284de}
 
 
 set previous traffic 
 
 
+\begin{DoxyParams}{Parameters}
+\item[{\em prevTraffic}]input traffic \end{DoxyParams}
 
-\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
-/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/include/\hyperlink{statistics_8h}{statistics.\-h}\item 
-/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/\hyperlink{statistics_8cpp}{statistics.\-cpp}\end{DoxyCompactItemize}
+/media/Data/research/code/online\_\-unsplittable\_\-heuristic/include/\hyperlink{statistics_8h}{statistics.h}\item 
+/media/Data/research/code/online\_\-unsplittable\_\-heuristic/\hyperlink{statistics_8cpp}{statistics.cpp}\end{DoxyCompactItemize}

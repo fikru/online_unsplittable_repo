@@ -103,3 +103,18 @@ void deviceSetup::empty_routers(list<router> &rList){
 		r_itr->setRLinkList(lList);
 	}
 }
+
+/* empty only the router traffic statistics
+ * @param rList the list of routers in the multistage architecture
+ */
+void deviceSetup::part_empty_routers(list<router> &rList){
+	for(list<router>::iterator r_itr = rList.begin(); r_itr != rList.end(); ++r_itr){
+		lList = r_itr->getRListLink();
+		r_itr->setResidual(r_itr->getActualCapacity());
+		for(list<rLink>::iterator l_itr = lList.begin(); l_itr != lList.end(); ++l_itr){
+			l_itr->setResidual(l_itr->getCapacity());
+			l_itr->clearLstat();
+		}
+		r_itr->setRLinkList(lList);
+	}
+}

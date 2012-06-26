@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 177.777778
+%%BoundingBox: 0 0 500 177.778
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,7 +19,7 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 2.812500 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 2.8125 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
@@ -188,20 +188,20 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (device) 1.000000 1.000000 box
- (multistage) 0.000000 0.000000 box
- (rLink) 1.000000 0.000000 box
- (router) 2.000000 0.000000 box
+ (device) 1 1 box
+ (multistage) 0 0 box
+ (rLink) 1 0 box
+ (router) 2 0 box
 
 % ----- relations -----
 
 solid
-1 1.000000 0.250000 out
+1 1 0.25 out
 solid
-0.000000 2.000000 1.000000 conn
+0 2 1 conn
 solid
-0 0.000000 0.750000 in
+0 0 0.75 in
 solid
-0 1.000000 0.750000 in
+0 1 0.75 in
 solid
-0 2.000000 0.750000 in
+0 2 0.75 in

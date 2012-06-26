@@ -26,5 +26,10 @@ public:
 	 * @param rList the list of routers in the multistage architecture
 	 */
 	void empty_routers(list<router> &);
+	/**
+	 * empty only the router traffic statistics
+	 * @param rList the list of routers in the multistage architecture
+	 */
+	void part_empty_routers(list<router> &);
 };
 #endif //DEVICESETUP_H_

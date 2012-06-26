@@ -8,9 +8,9 @@
 class measurement{
 private:
 	timeval start, end;
-	long startTime, endTime;
-	long file_last_mod_time,file_now_mod_time;
-	vector<long> time_advancedList;			/**<time_advance = end_time - start_time*/
+	double startTime, endTime;
+	double file_last_mod_time,file_now_mod_time;
+	vector<double> time_advancedList;			/**<time_advance = end_time - start_time*/
 public:
 	/**
 	 * constructor
@@ -39,7 +39,7 @@ public:
 
 	/**gets simulation time list
 	 */
-	vector<long> getTimeAdvList();
+	vector<double> getTimeAdvList();
 
 	/**get simulation start time
 	 * @return simulation start time - since epoch time
@@ -55,7 +55,7 @@ public:
 	/**gets file modification time
 	 * @return modification time
 	 */
-	long getModTime();
+	double getModTime();
 
 	/**display different packing statistics
 	 * @brief the statistics dispalyed include simulation time, objective, traffic forwarded and lost, etc

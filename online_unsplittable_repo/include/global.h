@@ -15,19 +15,18 @@
 using namespace std;
 
 /**@file global.h*/
-#define _ROUTER							//if sorting routers and links required
+//#define _ROUTER							//if sorting routers and links required
 #define _TRAFFIC						//if ordering the flows required (descending order)
-#define _RESULT							///<to display some results to see if the algorithm is working properly or not
+//#define _RESULT						///<to display some results to see if the algorithm is working properly or not
 //#define _CONFFILE						///<to display the configuration file
 //#define _REVERSE_SORT					///<sorting routers(only sorted based on router power) and links in opposite order to the optimal
-//#define _SHUFFLE						///<if sorting routers and links not required randomly shuffle the router list
-//#define _ROUTER_POWER_SORT			///<if sorting routers and links required
-#define _LINK_ROUTER_POWER_SORT	        ///<consider both link and router power consumption in ordering the routers
+//#define _ROUTER_POWER_SORT			///<sort routers based on their consumption
+//#define _LINK_ROUTER_POWER_SORT	        ///<consider both link and router power consumption in ordering the routers
 #define _FIRST_FIT						///<first fit algorithm
 //#define _BEST_FIT						///<best fit algorithm
 
-const int L_MAX_CAPACITY = 800;			///<possible max link capacity
-const int L_MIN_CAPACITY = 80;				///<possible min link capacity
+const int L_MAX_CAPACITY = 10000;			///<possible max link capacity
+const int L_MIN_CAPACITY = 10;				///<possible min link capacity
 
 //extern statistics mssr_stat, unused_instance;
 

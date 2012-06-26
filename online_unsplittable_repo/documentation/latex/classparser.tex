@@ -1,4 +1,5 @@
-\hypertarget{classparser}{\section{parser \-Class \-Reference}
+\hypertarget{classparser}{
+\section{parser Class Reference}
 \label{classparser}\index{parser@{parser}}
 }
 
@@ -8,133 +9,107 @@ parse command line parameters and input configuration file
 
 
 
-{\ttfamily \#include $<$parser.\-h$>$}
+{\ttfamily \#include $<$parser.h$>$}
 
-\subsection*{\-Public \-Member \-Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classparser_ac4cb16e924a735dfb5837772afa1a1a9}{parser} ()
-\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em constructor \item\end{DoxyCompactList}\item 
 \hyperlink{classparser_acdd4eb1b51b876954c2f7605f65388ce}{$\sim$parser} ()
-\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
-void \hyperlink{classparser_ac578bbb7b49c579bc4520a806fb316c5}{cmd\-\_\-parser} (int, char $\ast$$\ast$)
-\begin{DoxyCompactList}\small\item\em parse command line arguments \end{DoxyCompactList}\item 
-void \hyperlink{classparser_a4bcf9f11cfbb793a414221fafd4c4a7d}{input\-\_\-parser} (string)
-\begin{DoxyCompactList}\small\item\em parse backend router parameters from \-C\-P\-L\-E\-X\-\_\-\-O\-P\-L configuration file \end{DoxyCompactList}\item 
-void \hyperlink{classparser_a30a37d82f9894b3c725e2dd1daa0234f}{input\-\_\-traffic} (string)
-\begin{DoxyCompactList}\small\item\em parse input traffic \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em destructor \item\end{DoxyCompactList}\item 
+void \hyperlink{classparser_ac578bbb7b49c579bc4520a806fb316c5}{cmd\_\-parser} (int, char $\ast$$\ast$)
+\begin{DoxyCompactList}\small\item\em parse command line arguments \item\end{DoxyCompactList}\item 
+void \hyperlink{classparser_a4bcf9f11cfbb793a414221fafd4c4a7d}{input\_\-parser} (string)
+\begin{DoxyCompactList}\small\item\em parse backend router parameters from CPLEX\_\-OPL configuration file \item\end{DoxyCompactList}\item 
+void \hyperlink{classparser_a30a37d82f9894b3c725e2dd1daa0234f}{input\_\-traffic} (string)
+\begin{DoxyCompactList}\small\item\em parse input traffic \item\end{DoxyCompactList}\item 
 void \hyperlink{classparser_a6e2620bd81e91a69dc479f307c8b8b72}{usage} (const char $\ast$, int)
-\begin{DoxyCompactList}\small\item\em parse the command line. \end{DoxyCompactList}\item 
-bool \hyperlink{classparser_a8afa4de9b61d1d11a85de1c00041e69b}{is\-Odd} (int)
-\begin{DoxyCompactList}\small\item\em check if an integer value is odd or not \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em parse the command line. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classparser_a8afa4de9b61d1d11a85de1c00041e69b}{isOdd} (int)
+\begin{DoxyCompactList}\small\item\em check if an integer value is odd or not \item\end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{\-Detailed \-Description}
+\subsection{Detailed Description}
 parse command line parameters and input configuration file 
 
-
-
-\subsection{\-Constructor \& \-Destructor \-Documentation}
-\hypertarget{classparser_ac4cb16e924a735dfb5837772afa1a1a9}{\index{parser@{parser}!parser@{parser}}
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classparser_ac4cb16e924a735dfb5837772afa1a1a9}{
 \index{parser@{parser}!parser@{parser}}
-\subsubsection[{parser}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\-::parser} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classparser_ac4cb16e924a735dfb5837772afa1a1a9}
+\index{parser@{parser}!parser@{parser}}
+\subsubsection[{parser}]{\setlength{\rightskip}{0pt plus 5cm}parser::parser ()}}
+\label{classparser_ac4cb16e924a735dfb5837772afa1a1a9}
 
 
 constructor 
 
-\hypertarget{classparser_acdd4eb1b51b876954c2f7605f65388ce}{\index{parser@{parser}!$\sim$parser@{$\sim$parser}}
+\hypertarget{classparser_acdd4eb1b51b876954c2f7605f65388ce}{
+\index{parser@{parser}!$\sim$parser@{$\sim$parser}}
 \index{$\sim$parser@{$\sim$parser}!parser@{parser}}
-\subsubsection[{$\sim$parser}]{\setlength{\rightskip}{0pt plus 5cm}{\bf parser\-::$\sim$parser} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classparser_acdd4eb1b51b876954c2f7605f65388ce}
+\subsubsection[{$\sim$parser}]{\setlength{\rightskip}{0pt plus 5cm}parser::$\sim$parser ()}}
+\label{classparser_acdd4eb1b51b876954c2f7605f65388ce}
 
 
 destructor 
 
 
 
-\subsection{\-Member \-Function \-Documentation}
-\hypertarget{classparser_ac578bbb7b49c579bc4520a806fb316c5}{\index{parser@{parser}!cmd\-\_\-parser@{cmd\-\_\-parser}}
-\index{cmd\-\_\-parser@{cmd\-\_\-parser}!parser@{parser}}
-\subsubsection[{cmd\-\_\-parser}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf parser\-::cmd\-\_\-parser} (
-\begin{DoxyParamCaption}
-\item[{int}]{argc, }
-\item[{char $\ast$$\ast$}]{argv}
-\end{DoxyParamCaption}
-)}}\label{classparser_ac578bbb7b49c579bc4520a806fb316c5}
+\subsection{Member Function Documentation}
+\hypertarget{classparser_ac578bbb7b49c579bc4520a806fb316c5}{
+\index{parser@{parser}!cmd\_\-parser@{cmd\_\-parser}}
+\index{cmd\_\-parser@{cmd\_\-parser}!parser@{parser}}
+\subsubsection[{cmd\_\-parser}]{\setlength{\rightskip}{0pt plus 5cm}void parser::cmd\_\-parser (int {\em argc}, \/  char $\ast$$\ast$ {\em argv})}}
+\label{classparser_ac578bbb7b49c579bc4520a806fb316c5}
 
 
 parse command line arguments 
 
 input parameters for the simulation are taken from command line. 
-\begin{DoxyParams}{\-Parameters}
-{\em argc} & number of input arguments \\
-\hline
-{\em argv} & input arguments \\
-\hline
-\end{DoxyParams}
-\hypertarget{classparser_a4bcf9f11cfbb793a414221fafd4c4a7d}{\index{parser@{parser}!input\-\_\-parser@{input\-\_\-parser}}
-\index{input\-\_\-parser@{input\-\_\-parser}!parser@{parser}}
-\subsubsection[{input\-\_\-parser}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf parser\-::input\-\_\-parser} (
-\begin{DoxyParamCaption}
-\item[{string}]{config\-\_\-file}
-\end{DoxyParamCaption}
-)}}\label{classparser_a4bcf9f11cfbb793a414221fafd4c4a7d}
+\begin{DoxyParams}{Parameters}
+\item[{\em argc}]number of input arguments \item[{\em argv}]input arguments \end{DoxyParams}
+\hypertarget{classparser_a4bcf9f11cfbb793a414221fafd4c4a7d}{
+\index{parser@{parser}!input\_\-parser@{input\_\-parser}}
+\index{input\_\-parser@{input\_\-parser}!parser@{parser}}
+\subsubsection[{input\_\-parser}]{\setlength{\rightskip}{0pt plus 5cm}void parser::input\_\-parser (string {\em config\_\-file})}}
+\label{classparser_a4bcf9f11cfbb793a414221fafd4c4a7d}
 
 
-parse backend router parameters from \-C\-P\-L\-E\-X\-\_\-\-O\-P\-L configuration file 
+parse backend router parameters from CPLEX\_\-OPL configuration file 
 
 different internal components parameters are read from a text input file 
-\begin{DoxyParams}{\-Parameters}
-{\em config\-\_\-file} & \-C\-P\-L\-E\-X\-\_\-\-O\-P\-L formate configuration file \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{\-Returns}
+\begin{DoxyParams}{Parameters}
+\item[{\em config\_\-file}]CPLEX\_\-OPL formate configuration file \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
 traffic input traffic 
 
-r\-\_\-list list of routers class 
+r\_\-list list of routers class 
 \end{DoxyReturn}
-\hypertarget{classparser_a30a37d82f9894b3c725e2dd1daa0234f}{\index{parser@{parser}!input\-\_\-traffic@{input\-\_\-traffic}}
-\index{input\-\_\-traffic@{input\-\_\-traffic}!parser@{parser}}
-\subsubsection[{input\-\_\-traffic}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf parser\-::input\-\_\-traffic} (
-\begin{DoxyParamCaption}
-\item[{string}]{config\-\_\-file}
-\end{DoxyParamCaption}
-)}}\label{classparser_a30a37d82f9894b3c725e2dd1daa0234f}
+\hypertarget{classparser_a30a37d82f9894b3c725e2dd1daa0234f}{
+\index{parser@{parser}!input\_\-traffic@{input\_\-traffic}}
+\index{input\_\-traffic@{input\_\-traffic}!parser@{parser}}
+\subsubsection[{input\_\-traffic}]{\setlength{\rightskip}{0pt plus 5cm}void parser::input\_\-traffic (string {\em config\_\-file})}}
+\label{classparser_a30a37d82f9894b3c725e2dd1daa0234f}
 
 
 parse input traffic 
 
 this function is dedicated to get the traffic line from the configuration file and convert it into a traffic vector 
-\begin{DoxyParams}{\-Parameters}
-{\em config\-\_\-file} & the name of the configuration file \\
-\hline
-\end{DoxyParams}
-\hypertarget{classparser_a8afa4de9b61d1d11a85de1c00041e69b}{\index{parser@{parser}!is\-Odd@{is\-Odd}}
-\index{is\-Odd@{is\-Odd}!parser@{parser}}
-\subsubsection[{is\-Odd}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf parser\-::is\-Odd} (
-\begin{DoxyParamCaption}
-\item[{int}]{count}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classparser_a8afa4de9b61d1d11a85de1c00041e69b}
+\begin{DoxyParams}{Parameters}
+\item[{\em config\_\-file}]the name of the configuration file \end{DoxyParams}
+\hypertarget{classparser_a8afa4de9b61d1d11a85de1c00041e69b}{
+\index{parser@{parser}!isOdd@{isOdd}}
+\index{isOdd@{isOdd}!parser@{parser}}
+\subsubsection[{isOdd}]{\setlength{\rightskip}{0pt plus 5cm}bool parser::isOdd (int {\em count})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classparser_a8afa4de9b61d1d11a85de1c00041e69b}
 
 
 check if an integer value is odd or not 
 
-\hypertarget{classparser_a6e2620bd81e91a69dc479f307c8b8b72}{\index{parser@{parser}!usage@{usage}}
+\hypertarget{classparser_a6e2620bd81e91a69dc479f307c8b8b72}{
+\index{parser@{parser}!usage@{usage}}
 \index{usage@{usage}!parser@{parser}}
-\subsubsection[{usage}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf parser\-::usage} (
-\begin{DoxyParamCaption}
-\item[{const char $\ast$}]{program\-\_\-name, }
-\item[{int}]{exit\-\_\-code}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classparser_a6e2620bd81e91a69dc479f307c8b8b72}
+\subsubsection[{usage}]{\setlength{\rightskip}{0pt plus 5cm}void parser::usage (const char $\ast$ {\em program\_\-name}, \/  int {\em exit\_\-code})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classparser_a6e2620bd81e91a69dc479f307c8b8b72}
 
 
 parse the command line. 
@@ -142,15 +117,11 @@ parse the command line.
 command line usage information
 
 
-\begin{DoxyParams}{\-Parameters}
-{\em program\-\_\-name} & the name of the executable \\
-\hline
-{\em exit\-\_\-code} & if the programs exits without execution, indicate why it is not \\
-\hline
-\end{DoxyParams}
+\begin{DoxyParams}{Parameters}
+\item[{\em program\_\-name}]the name of the executable \item[{\em exit\_\-code}]if the programs exits without execution, indicate why it is not \end{DoxyParams}
 
 
-\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
-/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/include/\hyperlink{parser_8h}{parser.\-h}\item 
-/media/\-Data/research/code/online\-\_\-unsplittable\-\_\-heuristic/\hyperlink{parser_8cpp}{parser.\-cpp}\end{DoxyCompactItemize}
+/media/Data/research/code/online\_\-unsplittable\_\-heuristic/include/\hyperlink{parser_8h}{parser.h}\item 
+/media/Data/research/code/online\_\-unsplittable\_\-heuristic/\hyperlink{parser_8cpp}{parser.cpp}\end{DoxyCompactItemize}

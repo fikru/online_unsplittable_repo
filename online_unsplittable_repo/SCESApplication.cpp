@@ -57,7 +57,7 @@ int main(int argc, char** argv){
 		firstRun,							//number of runs
 		confChangeCount;					//count the number of configuration changes - in terms of the difference
 											//between number of current configuration devices and previous one
-	long 	lastModTime,nowModTime,referenceTime;
+	double lastModTime,nowModTime,referenceTime;
 	double  totalTraffic, obj;
 	vector<double> trafficToPack;
 	list<router> prevRList; 				//list of routers in the architecture - also shows previous configuration
@@ -146,11 +146,8 @@ int main(int argc, char** argv){
 					/*sum of the input traffic flows*/
 					totalTraffic = probe.getSum(traffic);
 
-					cout << totalTraffic << " " << mssr_stat.getLoadList().back() << endl;
-
 					if(totalTraffic != mssr_stat.getLoadList().back()){
 						obj = 0;
-
 						/*-- re-pack only the already used routers if the load is decreasing
 						 *   else keep current solution and add any additional resource required
 						 *   If the load is decreasing we just reset the routers*/
@@ -162,14 +159,20 @@ int main(int argc, char** argv){
 							mssr_stat.clearLostList();
 							trafficToPack = traffic;
 						}else{
+							/*-- empty the routers before packing - reset the router to default for the next run --*/
+							setup.part_empty_routers(rList);
+							/*-- clear previous statistics --*/
+							mssr_stat.clearForwardList();
+							mssr_stat.clearLostList();
+							trafficToPack = traffic;
 							/*-- decrease an already packed amount (previous load) from the current load
 							 * we just need some additional routers to handle the extra traffic --*/
-							if(!firstRun){
-								//trafficPrev = mssr_stat.getTraffic();
-								trafficToPack = mssr_stat.getTrafficDiff();
-							}else
-								trafficToPack = traffic;
-							//previous objective value - to be added with the objective obtained after the increase in traffic packed
+//							if(!firstRun){
+//								//trafficPrev = mssr_stat.getTraffic();
+//								trafficToPack = mssr_stat.getTrafficDiff();
+//							}else
+//								trafficToPack = traffic;
+//							//previous objective value - to be added with the objective obtained after the increase in traffic packed
 							obj = mssr_stat.getObjective();
 						}
 
@@ -191,7 +194,7 @@ int main(int argc, char** argv){
 
 						//Compare the number of devices involved in current configuration and the previous one
 						if(firstRun)
-							prevRList = rList;         //use the first configuration
+							prevRList.clear();         //use the first configuration
 						confChangeCount = probe.conf_diff(rList, prevRList);
 						prevRList = rList;
 
@@ -215,18 +218,19 @@ int main(int argc, char** argv){
 							mode = ios::trunc;
 						else										//else append data to file
 							mode = ios::app;
-						out_file.open("plotdata.txt", mode);
+						out_file.open("plotdata_unsorted.txt", mode);
 						if( !out_file ) { // file couldn't be opened
 							cerr << "Error: file could not be opened" << endl;
 							exit(1);
 						}
 						if(mssr_stat.getLoadList().back() == 0 || firstRun){
-							out_file << "Objective" << '\t' << "conf diff" <<  '\t' << "sim time" << endl;
-							out_file << "=========" << '\t' << "=========" <<  '\t' << "========" << endl;
+							out_file << "Load" << "\t\t" << "Objective" << "\t" << "conf diff" <<  "\t" << "sim time" << endl;
+							out_file << "====" << "\t\t" << "=========" << "\t" << "=========" <<  "\t" << "========" << endl;
 						}
-						out_file << mssr_stat.getObjectiveList().back() << '\t' << confChangeCount << endl;
+						out_file << totalTraffic << "\t\t" << mssr_stat.getObjective() << "\t\t\t" << confChangeCount <<  "\t\t\t" << probe.getTimeAdvList().back() << endl;
 						out_file.close();
 
+//						cout << totalTraffic << "\t\t" << mssr_stat.getObjective() << "\t\t\t" << confChangeCount <<  "\t\t\t" << probe.getTimeAdvList().back() << endl;
 						/*-- the first run already done, reset the first run indicator --*/
 						if(firstRun == 1)
 							firstRun = 0;

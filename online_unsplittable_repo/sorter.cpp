@@ -46,7 +46,6 @@ bool rcompare(router& lr, router& rr) {
 	#ifdef _LINK_ROUTER_POWER_SORT				//if link power is added to the router power for sorting purpose
 		eff_lr = lr.getActualCapacity() / (lr.getTotalPower());
 		eff_rr = rr.getActualCapacity() / (rr.getTotalPower());
-		//cout << eff_lr << " " << eff_rr << endl;
 		/*-- if the efficiency of two routers are the same,
 		 * then use their power consumption for comparison --*/
 		if (eff_lr == eff_rr) {
@@ -56,7 +55,6 @@ bool rcompare(router& lr, router& rr) {
 	#else
 		eff_lr = lr.getActualCapacity()/(lr.getPower());
 		eff_rr = rr.getActualCapacity()/(rr.getPower());
-		//cout << eff_lr << " " << eff_rr << endl;
 		/*-- if the efficiency of two routers are the same,
 		 * then use their power consumption for comparison --*/
 		if (eff_lr == eff_rr) {

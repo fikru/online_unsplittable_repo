@@ -24,9 +24,9 @@ void measurement::setEnd(){
 /*sets simulation time list
  */
 void measurement::setTimeAdvList(){
-	long start = getStart();
-	long end = getEnd();
-	long timeAdvanced = end - start;
+	double start = getStart();
+	double end = getEnd();
+	double timeAdvanced = end - start;
 	this->time_advancedList.push_back(timeAdvanced);
 }
 //set file modification time
@@ -54,12 +54,12 @@ double measurement::getEnd(){
 
 /*gets simulation time list
  */
-vector<long> measurement::getTimeAdvList(){
+vector<double> measurement::getTimeAdvList(){
 	return this->time_advancedList;
 }
 
 //gets file modification time
-long measurement::getModTime(){
+double measurement::getModTime(){
 	return this->file_last_mod_time;
 }
 
@@ -131,12 +131,15 @@ int measurement::conf_diff(list<router> &rList, list<router> &prev_rList){
 	int conf_change_count = 0;
 	list<router>::iterator r_itr_left = rList.begin();
 	list<router>::iterator r_itr_right = prev_rList.begin();
-	while(r_itr_left != rList.end() && r_itr_right != prev_rList.end()){
-		//if(r_itr_right->getFlag() == 1){
+	while(r_itr_left != rList.end()){
+		if(r_itr_right != prev_rList.end()){
 			if(r_itr_left->getFlag() != r_itr_right->getFlag()){
 				conf_change_count++;
 			}
-		//}
+		}else{
+			if(r_itr_left->getFlag() == 1)
+				conf_change_count++;
+		}
 		r_itr_left++;
 		r_itr_right++;
 	}
