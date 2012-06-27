@@ -111,7 +111,7 @@ int main(int argc, char** argv){
 
 			/* if sorting routers and links required, sort them as per their
 			 * efficiency = capacity/power. Else shuffle the list*/
-			#ifdef _ROUTER
+			#ifdef _RLSORT
 				sortOut.rsort(rList);
 			#else
 				sortOut.shuffle(rList);
@@ -136,7 +136,7 @@ int main(int argc, char** argv){
 					parse.input_traffic(argv[2]);
 
 					/* sort the traffic in decreasing order*/
-					#ifdef _TRAFFIC
+					#ifdef _TSORT
 						sortOut.tsort(traffic);
 					#endif
 
